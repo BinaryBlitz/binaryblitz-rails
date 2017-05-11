@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Binaryblitz</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+
+    <title>BinaryBlitz</title>
+
     <%= csrf_meta_tags %>
 
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render 'layouts/navbar' %>
+
     <%= yield %>
+
+    <%= render 'layouts/footer' %>
+    <%= render 'layouts/modal' %>
+    <%= render 'layouts/scripts' %>
   </body>
 </html>

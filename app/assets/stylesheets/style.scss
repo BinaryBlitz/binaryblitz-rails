@@ -1,6 +1,8 @@
 $main: #1e1f1e;
 $hover: #a3adaf;
-$browser-context: 16; // Default
+$browser-context: 16;
+// Default
+
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
