@@ -1,259 +1,283 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Calculator</title>
-
-
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-	
-</head>
-
-<body>
- 
-  <!-- Header -->
-  
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="logo">
-            <a href="/">
-              <img src="images/logo.png" alt="">
-            </a>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width" name="viewport">
+    <title>
+      Calculator
+    </title>
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="logo">
+              <a href="/"><img alt="" src="images/logo.png"></a>
+            </div>
+            <nav class="nav">
+              <div class="burger-wrap">
+                <a href="#"><span></span></a>
+              </div>
+              <ul>
+                <li>
+                  <a href="service.html">Услуги</a>
+                </li>
+                <li>
+                  <a class="active" href="works.html">Проекты</a>
+                </li>
+                <li>
+                  <a href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="nav">
-            <div class="burger-wrap">
-              <a href="#"><span></span></a>
-            </div>
-            <ul>
-              <li><a href="service.html">Услуги</a></li>
-              <li><a class="active" href="works.html">Проекты</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-sm-4">
-          <div class="header-links">
-            <a href="#" class="lang">EN</a>
-            <a href="#modal" class="callback-link fancybox btn">Обратный звонок</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Calculator -->
-  
-  <section class="calc-wrap">
-    <div class="container">
-      <form class="calc">
-        <h2 class="calc-head head">Калькулятор стоимости приложения</h2>
-        <div class="calc-slider">
-         
-          <!-- Calc 1 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Выберите одну или несколько платформ<br> для вашего мобильного приложения</div>
-            <div class="calc-select">
-              <input type="checkbox"> 
-              <i class="icon-ios-calculator-active"></i>
-              <p>iOS</p>
-            </div>
-            <div class="calc-select">
-              <input type="checkbox" name="calc-select1"> 
-              <i class="icon-android-calculator-active"></i>
-              <p>Android</p>
-            </div>
-          </div>
-          
-          <!-- Calc 2 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Укажите способ регистрации в<br> мобильном приложении?</div>
-            <div class="calc-select">
-              <input type="checkbox"> 
-              <i class="icon-mobilnum-calculator-active"></i>
-              <p>Номер телефона</p>
-            </div>
-            <div class="calc-select">
-              <input type="checkbox"> 
-              <i class="icon-social-calculator-active"></i>
-              <p>Социальные сети</p>
-            </div>
-            <div class="calc-select">
-              <input type="checkbox"> 
-              <i class="icon-loginpass-calculator-active"></i>
-              <p>Логин и Пароль</p>
-            </div>
-          </div>
-          
-          <!-- Calc 3 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Использование фото/видео камеры?</div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select3"> 
-              <i class="icon-camera-calculator-active"></i>
-              <p>Камера</p>
-            </div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select3"> 
-              <i class="icon-no-02-calculator-active"></i>
-              <p>Не требуется</p>
-            </div>
-          </div>
-          
-          <!-- Calc 4 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Использование геопозиции и карт?<br> Определение местоположения, отображение объектов на карте и т.д.</div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select4"> 
-              <i class="icon-map-calculator-active"></i>
-              <p>Геолокация</p>
-            </div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select4"> 
-              <i class="icon-no-03-calculator-active"></i>
-              <p>Не требуется</p>
-            </div>
-          </div>
-          
-          <!-- Calc 5 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Выберите один или несколько способов коммуникации<br> с пользователями приложения?</div>
-            <div class="calc-select">
-              <input type="checkbox"> 
-              <i class="icon-push-calculator-active"></i>
-              <p>Push-уведомления</p>
-            </div>
-            <div class="calc-select">
-              <input type="checkbox"> 
-              <i class="icon-mail-calculator-active"></i>
-              <p>E-mail рассылки</p>
-            </div>
-            <div class="calc-select">
-              <input type="checkbox"> 
-              <i class="icon-sms-calculator-active"></i>
-              <p>SMS-рассылки</p>
-            </div>
-          </div>
-          
-          <!-- Calc 6 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Есть ли у вас техническое задание?</div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select6"> 
-              <i class="icon-yes-calculator-active"></i>
-              <p>Есть подробное техническое задание</p>
-            </div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select6"> 
-              <i class="icon-incomplete-calculator-active"></i>
-              <p>Неполное, нуждается<br> в доработке</p>
-            </div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select6"> 
-              <i class="icon-idea-calculator-active"></i>
-              <p>Нет технического задания<br> только идея</p>
-            </div>
-          </div>
-          
-          <!-- Calc 7 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Есть ли у вас логотип, фирменный стиль?</div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select7"> 
-              <i class="icon-yeslogo-calculator-active"></i>
-              <p>Да, есть</p>
-            </div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select7"> 
-              <i class="icon-pen-calculator-active"></i>
-              <p>Требуется разработать</p>
-            </div>
-          </div>
-          
-          <!-- Calc 8 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Расскажите нам чуть больше, <br>чтобы мы могли точнее оценить стоимость</div>
-            <div class="form">
-              <input type="text" placeholder="Ваши комментарии">
-            </div>
-          </div>
-          
-          <!-- Calc 9 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Наш менеджер уже формирует для вас коммерческое предложение.<br> Укажите желаемый способ связи.</div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select9"> 
-              <i class="icon-mobilnum-calculator-active"></i>
-              <p>Мобильный телефон</p>
-            </div>
-            <div class="calc-select">
-              <input type="radio" name="calc-select9"> 
-              <i class="icon-email-calculator-active"></i>
-              <p>Электронная почта</p>
-            </div>
-          </div>
-          
-          <!-- Calc 10 -->
-          
-          <div class="calc-item">
-            <div class="calc-name">Указанные вами контактные данные<br> будут использованы только для связи с вами.</div>
-            <div class="form">
-              <input type="text" placeholder="Марат">
-              <input type="text" placeholder="+7 985 555 88 60">
-            </div>
-          </div>
-          
-        </div>
-        <div class="calc-links">
-          <a href="#" class="btn calc-prev">назад</a>
-          <a href="#" class="btn calc-next active">далее</a>
-          <button type="submit" class="btn calc-submit">отправить</button>
-        </div>
-      </form>
-    </div>
-  </section>
-   
-  <!-- Footer -->
-  
-  <footer class="footer-wrap">
-    <div class="container">
-      <div class="row">
-        <div class="footer">
-          <div class="col-sm-3">
-            <div class="copy">© BinaryBlitz 2017</div>
-          </div>
-          <div class="col-sm-6">
-            <div class="address"><i class="icon-location"></i>Москва, ул. Большая Никитская д. 22</div>
-          </div>
-          <div class="col-sm-3">
-            <div class="tel">
-              <a href="tel:79855558860"><i class="icon-phone"></i>+7 985 555 88 60</a>
+          <div class="col-sm-4">
+            <div class="header-links">
+              <a class="lang" href="#">EN</a> <a class="callback-link fancybox btn" href="#modal">Обратный звонок</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-	
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/common.js"></script>
-
-</body>
-
+    </header>
+    <!-- Calculator -->
+    <section class="calc-wrap">
+      <div class="container">
+        <form class="calc">
+          <h2 class="calc-head head">
+            Калькулятор стоимости приложения
+          </h2>
+          <div class="calc-slider">
+            <!-- Calc 1 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Выберите одну или несколько платформ<br>
+                для вашего мобильного приложения
+              </div>
+              <div class="calc-select">
+                <input type="checkbox"> <i class="icon-ios-calculator-active"></i>
+                <p>
+                  iOS
+                </p>
+              </div>
+              <div class="calc-select">
+                <input name="calc-select1" type="checkbox"> <i class="icon-android-calculator-active"></i>
+                <p>
+                  Android
+                </p>
+              </div>
+            </div>
+            <!-- Calc 2 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Укажите способ регистрации в<br>
+                мобильном приложении?
+              </div>
+              <div class="calc-select">
+                <input type="checkbox"> <i class="icon-mobilnum-calculator-active"></i>
+                <p>
+                  Номер телефона
+                </p>
+              </div>
+              <div class="calc-select">
+                <input type="checkbox"> <i class="icon-social-calculator-active"></i>
+                <p>
+                  Социальные сети
+                </p>
+              </div>
+              <div class="calc-select">
+                <input type="checkbox"> <i class="icon-loginpass-calculator-active"></i>
+                <p>
+                  Логин и Пароль
+                </p>
+              </div>
+            </div>
+            <!-- Calc 3 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Использование фото/видео камеры?
+              </div>
+              <div class="calc-select">
+                <input name="calc-select3" type="radio"> <i class="icon-camera-calculator-active"></i>
+                <p>
+                  Камера
+                </p>
+              </div>
+              <div class="calc-select">
+                <input name="calc-select3" type="radio"> <i class="icon-no-02-calculator-active"></i>
+                <p>
+                  Не требуется
+                </p>
+              </div>
+            </div>
+            <!-- Calc 4 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Использование геопозиции и карт?<br>
+                Определение местоположения, отображение объектов на карте и т.д.
+              </div>
+              <div class="calc-select">
+                <input name="calc-select4" type="radio"> <i class="icon-map-calculator-active"></i>
+                <p>
+                  Геолокация
+                </p>
+              </div>
+              <div class="calc-select">
+                <input name="calc-select4" type="radio"> <i class="icon-no-03-calculator-active"></i>
+                <p>
+                  Не требуется
+                </p>
+              </div>
+            </div>
+            <!-- Calc 5 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Выберите один или несколько способов коммуникации<br>
+                с пользователями приложения?
+              </div>
+              <div class="calc-select">
+                <input type="checkbox"> <i class="icon-push-calculator-active"></i>
+                <p>
+                  Push-уведомления
+                </p>
+              </div>
+              <div class="calc-select">
+                <input type="checkbox"> <i class="icon-mail-calculator-active"></i>
+                <p>
+                  E-mail рассылки
+                </p>
+              </div>
+              <div class="calc-select">
+                <input type="checkbox"> <i class="icon-sms-calculator-active"></i>
+                <p>
+                  SMS-рассылки
+                </p>
+              </div>
+            </div>
+            <!-- Calc 6 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Есть ли у вас техническое задание?
+              </div>
+              <div class="calc-select">
+                <input name="calc-select6" type="radio"> <i class="icon-yes-calculator-active"></i>
+                <p>
+                  Есть подробное техническое задание
+                </p>
+              </div>
+              <div class="calc-select">
+                <input name="calc-select6" type="radio"> <i class="icon-incomplete-calculator-active"></i>
+                <p>
+                  Неполное, нуждается<br>
+                  в доработке
+                </p>
+              </div>
+              <div class="calc-select">
+                <input name="calc-select6" type="radio"> <i class="icon-idea-calculator-active"></i>
+                <p>
+                  Нет технического задания<br>
+                  только идея
+                </p>
+              </div>
+            </div>
+            <!-- Calc 7 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Есть ли у вас логотип, фирменный стиль?
+              </div>
+              <div class="calc-select">
+                <input name="calc-select7" type="radio"> <i class="icon-yeslogo-calculator-active"></i>
+                <p>
+                  Да, есть
+                </p>
+              </div>
+              <div class="calc-select">
+                <input name="calc-select7" type="radio"> <i class="icon-pen-calculator-active"></i>
+                <p>
+                  Требуется разработать
+                </p>
+              </div>
+            </div>
+            <!-- Calc 8 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Расскажите нам чуть больше,<br>
+                чтобы мы могли точнее оценить стоимость
+              </div>
+              <div class="form">
+                <input placeholder="Ваши комментарии" type="text">
+              </div>
+            </div>
+            <!-- Calc 9 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Наш менеджер уже формирует для вас коммерческое предложение.<br>
+                Укажите желаемый способ связи.
+              </div>
+              <div class="calc-select">
+                <input name="calc-select9" type="radio"> <i class="icon-mobilnum-calculator-active"></i>
+                <p>
+                  Мобильный телефон
+                </p>
+              </div>
+              <div class="calc-select">
+                <input name="calc-select9" type="radio"> <i class="icon-email-calculator-active"></i>
+                <p>
+                  Электронная почта
+                </p>
+              </div>
+            </div>
+            <!-- Calc 10 -->
+            <div class="calc-item">
+              <div class="calc-name">
+                Указанные вами контактные данные<br>
+                будут использованы только для связи с вами.
+              </div>
+              <div class="form">
+                <input placeholder="Марат" type="text"> <input placeholder="+7 985 555 88 60" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="calc-links">
+            <a class="btn calc-prev" href="#">назад</a> <a class="btn calc-next active" href="#">далее</a> <button class="btn calc-submit" type="submit">отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="footer">
+            <div class="col-sm-3">
+              <div class="copy">
+                © BinaryBlitz 2017
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="address">
+                <i class="icon-location"></i>Москва, ул. Большая Никитская д. 22
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="tel">
+                <a href="tel:79855558860"><i class="icon-phone"></i>+7 985 555 88 60</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-1.10.2.min.js">
+    </script>
+    <script src="js/slick.min.js">
+    </script>
+    <script src="js/common.js">
+    </script>
+  </body>
 </html>
