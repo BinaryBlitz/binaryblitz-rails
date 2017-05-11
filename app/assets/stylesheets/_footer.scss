@@ -1,0 +1,25 @@
+/* Footer */
+
+.footer {
+  padding: rem(40) rem(75);
+}
+
+.copy,
+.address,
+.tel {
+  font-size: em(15);
+  i {
+    margin-right: rem(15);
+    font-size: em(20);
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.address {
+  text-align: center;
+}
+
+.tel {
+  text-align: right;
+}

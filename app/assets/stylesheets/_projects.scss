@@ -1,0 +1,84 @@
+/* Works */
+
+.works {
+  padding: 0 em(75);
+  &-nav {
+    padding: em(60) 0;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: em(75);
+      a {
+        font-size: em(20);
+        &.active {
+          color: $hover;
+        }
+      }
+    }
+  }
+  &-items {
+    font-size: 0;
+  }
+  &-item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16em;
+    height: 300px;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    padding: rem(55) rem(10) rem(10) rem(55);
+    &:hover {
+      background-size: 105%;
+      .works-hover {
+        opacity: 1;
+      }
+      .works-bg {
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+      }
+    }
+  }
+  &-hover {
+    background: rgba(0,0,0,.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 300ms;
+  }
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transition: 300ms;
+  }
+  &-logo {
+    height: rem(120);
+  }
+  &-type {
+    font-size: rem(15);
+    font-weight: 600;
+  }
+  &-name {
+    font-size: rem(24);
+    font-weight: 600;
+    line-height: (30/24);
+    max-width: 260px;
+    margin-top: rem(5);
+  }
+}
+
+.works-item_light {
+  color: #fff;
+}

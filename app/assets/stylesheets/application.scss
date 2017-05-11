@@ -1,0 +1,100 @@
+$main: #1e1f1e;
+$hover: #a3adaf;
+$browser-context: 16;
+
+// Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  outline: none;
+}
+
+*:focus,
+*:active{
+  outline: none !important;
+}
+
+body {
+  font-size: 100%;
+  color: $main;
+  font-weight: 400;
+  font-family: 'Proxima Nova';
+  background: #f8f9f9;
+}
+
+a {
+  color: $main;
+  font-weight: 400;
+  font-family: 'Proxima Nova';
+  text-decoration: none;
+  transition: 300ms;
+  display: inline-block;
+  line-height: 1;
+  font-size: em(16);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $hover;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+.cf:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.head {
+  font-weight: 600;
+  font-size: em(32);
+  line-height: (42/32);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+@import 'navbar';
+@import 'index';
+@import 'footer';
+@import 'projects';
+@import 'project';
+@import 'calculator';
+@import 'contact';
+@import 'modal';
+@import 'media';

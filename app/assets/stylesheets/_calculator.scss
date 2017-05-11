@@ -1,0 +1,100 @@
+/* Calc */
+
+.calc {
+  text-align: center;
+  padding: em(80) 0 em(67);
+  &-head {
+    font-size: em(38);
+    margin-bottom: rem(118);
+  }
+  &-name {
+    height: rem(150);
+    font-size: em(24);
+    font-weight: 400;
+    line-height: (30/24);
+  }
+  &-slider {
+    margin-bottom: rem(180);
+    position: relative;
+    .slick-dots {
+      position: absolute;
+      bottom: -90px;
+      width: 280px;
+      text-align: center;
+      left: 50%;
+      margin-left: -140px;
+      button {
+        text-indent: -9999px;
+        width: 4px;
+        height: 4px;
+        background-color: $hover;
+        border-radius: 50%;
+        border: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 4px;
+        cursor: pointer;
+        width: 20px;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        &:hover,
+        &.slick-active {
+          button {
+            margin-top: 1px;
+            width: 6px;
+            height: 6px;
+            background: $main;
+          }
+        }
+      }
+    }
+  }
+  &-select {
+    width: 21%;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    color: $hover;
+    transition: 200ms;
+    &.active {
+      color: $main;
+    }
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    i {
+      font-size: em(80);
+      margin-bottom: rem(25);
+      display: inline-block;
+    }
+    p {
+      font-size: em(16);
+      font-weight: 700;
+    }
+  }
+  &-links {
+    a,
+    button {
+      vertical-align: middle;
+      margin: 0 4px;
+      font-size: em(12);
+      display: none;
+      &.active {
+        display: inline-block;
+      }
+    }
+  }
+  &-item {
+    .form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}

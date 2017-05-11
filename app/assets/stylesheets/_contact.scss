@@ -1,0 +1,43 @@
+/* Contacts */
+
+.contacts {
+  padding: em(167) em(75) em(90);
+  &-head {
+    height: rem(160);
+  }
+  &-items {
+    margin-top: em(9);
+  }
+  &-item {
+    margin-bottom: rem(55);
+    i {
+      font-size: em(30);
+      display: inline-block;
+      vertical-align: middle;
+      width: rem(30);
+      text-align: center;
+      margin-right: rem(37);
+    }
+    p,
+    a {
+      font-size: em(22);
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 300;
+    }
+  }
+  &-inputs {
+    font-size: 0;
+    margin-bottom: rem(30);
+    input {
+      width: 47%;
+      font-size: rem(18);
+      &:first-child {
+        margin-right: 6%;
+      }
+    }
+  }
+  .btn {
+    font-size: em(12);
+  }
+}

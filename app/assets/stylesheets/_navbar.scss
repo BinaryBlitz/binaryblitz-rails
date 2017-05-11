@@ -1,0 +1,68 @@
+/* Navbar */
+
+.header {
+  background: #fff;
+  &-links {
+    padding-top: em(24);
+    text-align: right;
+  }
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 em(56) 0 0;
+  padding: em(32.5) 0;
+}
+
+.nav {
+  display: inline-block;
+  vertical-align: middle;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 em(43) 0 0;
+    &:last-child {
+      margin: 0;
+    }
+    a {
+      font-weight: bold;
+      &.active {
+        color: $hover;
+      }
+    }
+  }
+}
+
+.burger-wrap {
+  display: none;
+}
+
+.btn {
+  line-height: rem(36);
+  border: 1px solid $main;
+  border-radius: rem(18);
+  padding: 0 rem(18);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: em(10);
+  background: none;
+  transition: 300ms;
+  &:hover {
+    background: $main;
+    color: #fff;
+  }
+}
+
+.callback-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: em(50);
+}
+
+.lang {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: em(14);
+}

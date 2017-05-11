@@ -1,0 +1,33 @@
+/* Modal */
+
+.modal-form {
+  display: none;
+  width: 600px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  padding: rem(54) rem(83);
+  &-head {
+    margin-bottom: rem(50);
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
+
+.fancybox-overlay {
+  background: rgba(237,239,240,.9);
+}
+
+.fancybox-opened .fancybox-skin {
+  box-shadow: 0 0 50px rgba(13, 24, 23, 0.1);
+  background: none;
+}
+
+.fancybox-close {
+  background: url(../images/icon-close.png) no-repeat center;
+  width: 17px;
+  height: 17px;
+  top: 0;
+  right: -37px;
+}
