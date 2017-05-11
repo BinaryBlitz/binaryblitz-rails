@@ -1,0 +1,176 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Semibold.eot');
+	src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+		url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Light.eot');
+	src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?qu2go5');
+  src:  url('../fonts/icomoon.eot?qu2go5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qu2go5') format('truetype'),
+    url('../fonts/icomoon.woff?qu2go5') format('woff'),
+    url('../fonts/icomoon.svg?qu2go5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ads:before {
+  content: "\e900";
+}
+.icon-analysis:before {
+  content: "\e901";
+}
+.icon-android-calculator-active:before {
+  content: "\e902";
+}
+.icon-auditcode:before {
+  content: "\e903";
+}
+.icon-back-w:before {
+  content: "\e904";
+}
+.icon-brand:before {
+  content: "\e905";
+}
+.icon-camera-calculator-active:before {
+  content: "\e906";
+}
+.icon-close:before {
+  content: "\e907";
+}
+.icon-conversion:before {
+  content: "\e908";
+}
+.icon-email-calculator-active:before {
+  content: "\e909";
+}
+.icon-footer-location:before {
+  content: "\e90a";
+}
+.icon-header-down:before {
+  content: "\e90b";
+}
+.icon-idea-calculator-active:before {
+  content: "\e90c";
+}
+.icon-incomplete-calculator-active:before {
+  content: "\e90d";
+}
+.icon-ios-calculator-active:before {
+  content: "\e90e";
+}
+.icon-location:before {
+  content: "\e90f";
+}
+.icon-loginpass-calculator-active:before {
+  content: "\e910";
+}
+.icon-mail-calculator-active:before {
+  content: "\e911";
+}
+.icon-map-calculator-active:before {
+  content: "\e912";
+}
+.icon-marketingplan:before {
+  content: "\e913";
+}
+.icon-mobilnum-calculator-active:before {
+  content: "\e914";
+}
+.icon-no-01-calculator-active:before {
+  content: "\e915";
+}
+.icon-no-02-calculator-active:before {
+  content: "\e916";
+}
+.icon-no-03-calculator-active:before {
+  content: "\e917";
+}
+.icon-no-04-calculator-active:before {
+  content: "\e918";
+}
+.icon-pen-calculator-active:before {
+  content: "\e919";
+}
+.icon-phone:before {
+  content: "\e91a";
+}
+.icon-push-calculator-active:before {
+  content: "\e91b";
+}
+.icon-sms-calculator-active:before {
+  content: "\e91c";
+}
+.icon-social-calculator-active:before {
+  content: "\e91d";
+}
+.icon-strategy:before {
+  content: "\e91e";
+}
+.icon-tz:before {
+  content: "\e91f";
+}
+.icon-video:before {
+  content: "\e920";
+}
+.icon-webmob:before {
+  content: "\e921";
+}
+.icon-yes-calculator-active:before {
+  content: "\e922";
+}
+.icon-yeslogo-calculator-active:before {
+  content: "\e923";
+}
+
