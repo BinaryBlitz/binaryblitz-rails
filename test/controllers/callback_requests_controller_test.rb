@@ -9,7 +9,7 @@ class CallbackRequestsControllerTest < ActionDispatch::IntegrationTest
     @callback_request.destroy
 
     assert_difference 'CallbackRequest.count' do
-      post callback_requests_url(@callback_request), params: {
+      post callback_requests_path, params: {
         callback_request: @callback_request.attributes
       }
     end
