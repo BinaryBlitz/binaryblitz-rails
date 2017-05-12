@@ -1,0 +1,4 @@
+support_request:
+  name: Name
+  email: foo@bar.com
+  content: Content
