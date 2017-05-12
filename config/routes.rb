@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'projects', to: 'pages#projects'
   get 'calculator', to: 'pages#calculator'
   get 'chisto', to: 'pages#chisto'
+
+  resources :callback_requests, only: [:create]
 end
