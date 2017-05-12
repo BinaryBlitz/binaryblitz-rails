@@ -26,12 +26,14 @@
           <h2 class="contacts-head head">
             Напишите нам и наши сотрудники обязательно вам помогут
           </h2>
-          <form action="post" class="form">
+          <%= form_for [@support_request], html: { class: 'form' } do |f| %>
             <div class="contacts-inputs">
-              <input placeholder="Ваш имя" type="text"> <input placeholder="Ваш email" type="email">
+              <%= f.text_field :name, placeholder: 'Ваше имя' %>
+              <%= f.email_field :email, placeholder: 'Ваш email' %>
             </div>
-            <textarea placeholder="Ваш вопрос"></textarea> <button class="btn" type="submit">отправить</button>
-          </form>
+            <%= f.text_area :content, placeholder: 'Ваш вопрос' %>
+            <%= button_tag 'отправить', class: 'btn' %>
+          <% end %>
         </div>
       </div>
     </div>
