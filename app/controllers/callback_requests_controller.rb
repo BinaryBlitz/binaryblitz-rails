@@ -5,7 +5,7 @@ class CallbackRequestsController < ApplicationController
     if @callback_request.save
       redirect_to root_path
     else
-      render template: 'pages/home'
+      render template: 'pages/index'
     end
   end
 
