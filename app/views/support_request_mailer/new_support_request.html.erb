@@ -1,0 +1,17 @@
+<h1> Запрос на обработку №<%= @support_request.id %> </h1>
+
+<p>
+  Время составления заявки: <%= @support_request.created_at.to_formatted_s(:short) %>
+</p>
+
+<p>
+  Имя: <%= @support_request.name %>
+</p>
+
+<p>
+  Почта: <%= @support_request.email %>
+</p>
+
+<p>
+  Вопрос: <%= @support_request.content %>
+</p>
