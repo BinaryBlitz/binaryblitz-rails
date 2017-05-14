@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'httparty'
 gem 'phonelib'
+gem 'email_validator'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
