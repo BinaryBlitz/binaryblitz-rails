@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal-form" id="modal">
-  <%= form_for [CallbackRequest.new], url: { controller: 'callback_requests', action: 'create' }, html: {class: 'form'} do |f| %>
+  <%= form_for CallbackRequest.new, html: {class: 'form'} do |f| %>
     <h2 class="head modal-form-head">
       Оставьте контактный номер телефона и мы перезвоним вам.
     </h2>
