@@ -151,9 +151,12 @@
         </h2>
       </div>
       <div class="col-sm-6">
-        <form action="post" class="form">
-          <input placeholder="Ваш email" type="email"> <input placeholder="Ваш вопрос" type="text"> <button class="btn" type="submit">отправить</button>
-        </form>
+        <%= form_for CallbackRequest.new, html: { class: 'form' } do |f| %>
+          <%= f.text_field :name, placeholder: 'Ваше имя' %>
+          <%= f.email_field :email, placeholder: 'Ваш email' %>
+          <%= f.text_field :content, placeholder: 'Ваш вопрос' %>
+          <%= button_tag 'отправить', class: 'btn' %>
+        <% end %>
       </div>
     </div>
   </div>
