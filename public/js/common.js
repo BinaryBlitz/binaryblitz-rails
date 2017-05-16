@@ -73,10 +73,4 @@ $(document).ready(function() {
     infinite: false
   });
 
-  // Fancybox
-
-  $('.fancybox').fancybox({
-    padding: 0
-  });
-
 });
