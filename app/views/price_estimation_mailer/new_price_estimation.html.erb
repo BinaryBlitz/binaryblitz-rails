@@ -1,0 +1,45 @@
+<h1> Заказ на оценку стоимости №<%= @price_estimation.id %> </h1>
+
+<p>
+  Время составления заявки: <%= @price_estimation.created_at.to_formatted_s(:short) %>
+</p>
+
+<p>
+  Платформы: <%= @price_estimation.platforms.join(', ') %>
+</p>
+
+<p>
+  Способы регистрации: <%= @price_estimation.registration_methods.join(', ') %>
+</p>
+
+<p>
+  Использование камеры: <%= @price_estimation.camera_use %>
+</p>
+
+<p>
+  Использование геопозиции: <%= @price_estimation.geolocation_use %>
+</p>
+
+<p>
+  Способы коммуникации с пользователями: <%= @price_estimation.notification_methods.join(', ') %>
+</p>
+
+<p>
+  Техническое задание: <%= @price_estimation.specification_stage %>
+</p>
+
+<p>
+  Логотип: <%= @price_estimation.logo %>
+</p>
+
+<p>
+  Комментарий: <%= @price_estimation.communication_method %>
+</p>
+
+<p>
+  Телефон: <%= @price_estimation.phone_number %>
+</p>
+
+<p>
+  Имя: <%= @price_estimation.name %>
+</p>
