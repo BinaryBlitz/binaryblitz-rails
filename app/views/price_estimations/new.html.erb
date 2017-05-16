@@ -1,7 +1,7 @@
 <!-- Calculator -->
 <section class="calc-wrap">
   <div class="container">
-    <form class="calc">
+    <%= form_for @price_estimation, html: { class: 'calc' } do |f| %>
       <h2 class="calc-head head">
         Калькулятор стоимости приложения
       </h2>
@@ -13,13 +13,15 @@
             для вашего мобильного приложения
           </div>
           <div class="calc-select">
-            <input type="checkbox"> <i class="icon-ios-calculator-active"></i>
+            <%= f.check_box :platforms, { multiple: true }, 'ios', nil %>
+            <i class="icon-ios-calculator-active"></i>
             <p>
               iOS
             </p>
           </div>
           <div class="calc-select">
-            <input name="calc-select1" type="checkbox"> <i class="icon-android-calculator-active"></i>
+            <%= f.check_box :platforms, { multiple: true }, 'android', nil %>
+            <i class="icon-android-calculator-active"></i>
             <p>
               Android
             </p>
@@ -32,19 +34,22 @@
             мобильном приложении?
           </div>
           <div class="calc-select">
-            <input type="checkbox"> <i class="icon-mobilnum-calculator-active"></i>
+            <%= f.check_box :registration_methods, { multiple: true }, 'phone', nil %>
+            <i class="icon-mobilnum-calculator-active"></i>
             <p>
               Номер телефона
             </p>
           </div>
           <div class="calc-select">
-            <input type="checkbox"> <i class="icon-social-calculator-active"></i>
+            <%= f.check_box :registration_methods, { multiple: true }, 'socials', nil %>
+            <i class="icon-social-calculator-active"></i>
             <p>
               Социальные сети
             </p>
           </div>
           <div class="calc-select">
-            <input type="checkbox"> <i class="icon-loginpass-calculator-active"></i>
+            <%= f.check_box :registration_methods, { multiple: true }, 'password', nil %>
+            <i class="icon-loginpass-calculator-active"></i>
             <p>
               Логин и Пароль
             </p>
@@ -56,13 +61,15 @@
             Использование фото/видео камеры?
           </div>
           <div class="calc-select">
-            <input name="calc-select3" type="radio"> <i class="icon-camera-calculator-active"></i>
+            <%= f.radio_button :camera_use, true %>
+            <i class="icon-camera-calculator-active"></i>
             <p>
               Камера
             </p>
           </div>
           <div class="calc-select">
-            <input name="calc-select3" type="radio"> <i class="icon-no-02-calculator-active"></i>
+            <%= f.radio_button :camera_use, false %>
+            <i class="icon-no-02-calculator-active"></i>
             <p>
               Не требуется
             </p>
@@ -75,13 +82,15 @@
             Определение местоположения, отображение объектов на карте и т.д.
           </div>
           <div class="calc-select">
-            <input name="calc-select4" type="radio"> <i class="icon-map-calculator-active"></i>
+            <%= f.radio_button :geolocation_use, true %>
+            <i class="icon-map-calculator-active"></i>
             <p>
               Геолокация
             </p>
           </div>
           <div class="calc-select">
-            <input name="calc-select4" type="radio"> <i class="icon-no-03-calculator-active"></i>
+            <%= f.radio_button :geolocation_use, false %>
+            <i class="icon-no-03-calculator-active"></i>
             <p>
               Не требуется
             </p>
@@ -94,19 +103,22 @@
             с пользователями приложения?
           </div>
           <div class="calc-select">
-            <input type="checkbox"> <i class="icon-push-calculator-active"></i>
+            <%= f.check_box :notification_methods, { multiple: true }, 'push', nil %>
+            <i class="icon-push-calculator-active"></i>
             <p>
               Push-уведомления
             </p>
           </div>
           <div class="calc-select">
-            <input type="checkbox"> <i class="icon-mail-calculator-active"></i>
+            <%= f.check_box :notification_methods, { multiple: true }, 'email', nil %>
+            <i class="icon-mail-calculator-active"></i>
             <p>
               E-mail рассылки
             </p>
           </div>
           <div class="calc-select">
-            <input type="checkbox"> <i class="icon-sms-calculator-active"></i>
+            <%= f.check_box :notification_methods, { multiple: true }, 'sms', nil %>
+            <i class="icon-sms-calculator-active"></i>
             <p>
               SMS-рассылки
             </p>
@@ -118,20 +130,23 @@
             Есть ли у вас техническое задание?
           </div>
           <div class="calc-select">
-            <input name="calc-select6" type="radio"> <i class="icon-yes-calculator-active"></i>
+            <%= f.radio_button :specification_stage, 'complete' %>
+            <i class="icon-yes-calculator-active"></i>
             <p>
               Есть подробное техническое задание
             </p>
           </div>
           <div class="calc-select">
-            <input name="calc-select6" type="radio"> <i class="icon-incomplete-calculator-active"></i>
+            <%= f.radio_button :specification_stage, 'half-complete' %>
+            <i class="icon-incomplete-calculator-active"></i>
             <p>
               Неполное, нуждается<br>
               в доработке
             </p>
           </div>
           <div class="calc-select">
-            <input name="calc-select6" type="radio"> <i class="icon-idea-calculator-active"></i>
+            <%= f.radio_button :specification_stage, 'none' %>
+            <i class="icon-idea-calculator-active"></i>
             <p>
               Нет технического задания<br>
               только идея
@@ -144,13 +159,15 @@
             Есть ли у вас логотип, фирменный стиль?
           </div>
           <div class="calc-select">
-            <input name="calc-select7" type="radio"> <i class="icon-yeslogo-calculator-active"></i>
+            <%= f.radio_button :logo, true %>
+            <i class="icon-yeslogo-calculator-active"></i>
             <p>
               Да, есть
             </p>
           </div>
           <div class="calc-select">
-            <input name="calc-select7" type="radio"> <i class="icon-pen-calculator-active"></i>
+            <%= f.radio_button :logo, false %>
+            <i class="icon-pen-calculator-active"></i>
             <p>
               Требуется разработать
             </p>
@@ -163,7 +180,7 @@
             чтобы мы могли точнее оценить стоимость
           </div>
           <div class="form">
-            <input placeholder="Ваши комментарии" type="text">
+            <%= f.text_field :comment, placeholder: 'Ваши комментарии' %>
           </div>
         </div>
         <!-- Calc 9 -->
@@ -173,13 +190,15 @@
             Укажите желаемый способ связи.
           </div>
           <div class="calc-select">
-            <input name="calc-select9" type="radio"> <i class="icon-mobilnum-calculator-active"></i>
+            <%= f.radio_button :communication_method, 'phone' %>
+            <i class="icon-mobilnum-calculator-active"></i>
             <p>
               Мобильный телефон
             </p>
           </div>
           <div class="calc-select">
-            <input name="calc-select9" type="radio"> <i class="icon-email-calculator-active"></i>
+            <%= f.radio_button :communication_method, 'email' %>
+            <i class="icon-email-calculator-active"></i>
             <p>
               Электронная почта
             </p>
@@ -192,13 +211,15 @@
             будут использованы только для связи с вами.
           </div>
           <div class="form">
-            <input placeholder="Марат" type="text"> <input placeholder="+7 985 555 88 60" type="text">
+            <%= f.text_field :name, placeholder: 'Марат' %>
+            <%= f.phone_field :phone_number, placeholder: '+7 985 555 88 60' %>
           </div>
         </div>
       </div>
       <div class="calc-links">
-        <a class="btn calc-prev" href="#">назад</a> <a class="btn calc-next active" href="#">далее</a> <button class="btn calc-submit" type="submit">отправить</button>
+        <a class="btn calc-prev" href="#">назад</a> <a class="btn calc-next active" href="#">далее</a>
+        <%= button_tag 'отправить', class: 'btn calc-submit' %>
       </div>
-    </form>
+    <% end %>
   </div>
 </section>
