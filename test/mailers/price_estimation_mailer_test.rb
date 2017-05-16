@@ -13,7 +13,7 @@ class PriceEstimationMailerTest < ActionMailer::TestCase
     end
 
     assert_equal ['noreply@binaryblitz.ru'], email.from
-    assert_equal ['foo@bar.com'], email.to
+    assert_equal [Rails.application.secrets.recipient_email], email.to
     assert_equal "Заказ на оценку стоимости №#{@price_estimation.id}", email.subject
   end
 end
