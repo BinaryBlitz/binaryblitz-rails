@@ -7,6 +7,13 @@ Rails.application.routes.draw do
     get 'projects', to: 'pages#projects'
     get 'calculator', to: 'price_estimations#new'
     get 'chisto', to: 'pages#chisto'
+    get 'sportup', to: 'pages#sportup'
+    get 'gethelp', to: 'pages#gethelp'
+    get 'academia', to: 'pages#academia'
+    get 'zp', to: 'pages#zp'
+    get 'justforyou', to: 'pages#justforyou'
+    get '1na1', to: 'pages#1na1'
+    get 'getfit', to: 'pages#getfit'
 
     resources :callback_requests, only: [:create]
     resources :price_estimations, only: [:create]

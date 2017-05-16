@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-sm-push-6">
-        <img alt="" src="images/iPhone-screen.png">
+        <img alt="" src="/images/iPhone-screen.png">
       </div>
       <div class="col-sm-6 col-sm-pull-6">
         <h2 class="showcase-head head">
@@ -13,7 +13,8 @@
           So you’re trying to surf a site like myspace, hotmail or yahoo mail from work.
         </p>
         <div class="showcase-links">
-          <a class="btn" href="#">наши проекты</a> <a class="btn" href="#">Рассчитать стоимость</a>
+          <%= link_to 'наши проекты', projects_path, class: 'btn' %>
+          <%= link_to 'рассчитать стоимость', calculator_path, class: 'btn' %>
         </div>
       </div>
     </div>
@@ -24,7 +25,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-sm-push-6">
-        <img alt="" src="images/iMac.png">
+        <img alt="" src="/images/iMac.png">
       </div>
       <div class="col-sm-6 col-sm-pull-6">
         <h2 class="showcase-head head">
@@ -34,7 +35,7 @@
           Or maybe you want to go on a site without anyone knowing what your doing.
         </p>
         <div class="showcase-links">
-          <a class="btn" href="#">наши проекты</a>
+          <%= link_to 'наши проекты', projects_path, class: 'btn' %>
         </div>
       </div>
     </div>
