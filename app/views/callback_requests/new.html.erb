@@ -28,8 +28,8 @@
           </h2>
           <%= form_for @callback_request, html: { class: 'form' } do |f| %>
             <div class="contacts-inputs">
-              <%= f.text_field :name, placeholder: 'Ваше имя' %>
-              <%= f.email_field :email, placeholder: 'Ваш email' %>
+              <%= f.text_field :name, placeholder: 'Ваше имя', required: true %>
+              <%= f.email_field :email, placeholder: 'Ваш email', required: true %>
             </div>
             <%= f.text_area :content, placeholder: 'Ваш вопрос' %>
             <%= button_tag 'отправить', class: 'btn' %>
