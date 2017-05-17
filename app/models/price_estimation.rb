@@ -7,7 +7,13 @@ class PriceEstimation < ApplicationRecord
   validate :valid_registration_methods
   validate :valid_notification_methods
 
+  after_create :send_email
+
   private
+
+  def send_email
+    PriceEstimationMailer.new_price_estimation(self).deliver
+  end
 
   def valid_platforms
     unless (platforms - %w(ios android)).empty?
@@ -26,5 +32,4 @@ class PriceEstimation < ApplicationRecord
       errors.add(:base, 'notification method is not from the list')
     end
   end
-
 end
