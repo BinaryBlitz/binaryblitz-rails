@@ -1,2 +1,10 @@
 ru:
-  hello: "Привет мир"
+  errors:
+    format: '%{message}'
+  activerecord:
+    errors:
+      models:
+        price_estimation:
+          attributes:
+            phone_number:
+              invalid: 'Неправильный номер телефона'

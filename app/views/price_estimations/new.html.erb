@@ -1,4 +1,16 @@
 <!-- Calculator -->
+<% if @price_estimation.errors.any? %>
+  <div class="panel panel-danger">
+    <div class="panel-body">
+      <ul>
+      <% @price_estimation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
 <section class="calc-wrap">
   <div class="container">
     <%= form_for @price_estimation, html: { class: 'calc' } do |f| %>
