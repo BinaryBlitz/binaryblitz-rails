@@ -1,9 +1,6 @@
 class PriceEstimation < ApplicationRecord
-  include Phonable
-
+  validates :phone_number_or_email, presence: true
   validates :name, presence: true
-  validates :phone_number, phone: true, presence: true
-  validates :communication_method, inclusion: { in: %w(phone email) }, allow_blank: true
   validates :specification_stage, inclusion: { in: %w(complete half-complete none) }, allow_blank: true
   validate :valid_platforms
   validate :valid_registration_methods
@@ -31,5 +28,4 @@ class PriceEstimation < ApplicationRecord
       errors.add(:base, 'notification method is not from the list')
     end
   end
-
 end
