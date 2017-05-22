@@ -4,7 +4,12 @@ ru:
   activerecord:
     errors:
       models:
-        price_estimation:
+        callback_request:
           attributes:
             phone_number:
               invalid: 'Неправильный номер телефона'
+            email:
+              invalid: 'Неправильный email'
+            name:
+              invalid: 'Неправильно указано имя'
+              blank: 'Имя не указано'
