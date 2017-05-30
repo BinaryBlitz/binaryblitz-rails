@@ -6,8 +6,8 @@ class CallbackRequestsController < ApplicationController
   def create
     @callback_request = CallbackRequest.new(callback_request_params)
 
-    if @callback_request.save || @callback_request.attributes.values.all?(&:blank?)
-      redirect_to root_path, notice: 'Спасибо за вашу заявку, в ближайшее время мы свяжемся с вами.'
+    if @callback_request.save
+      redirect_to root_path, notice: 'Спасибо за заявку, в ближайшее время мы свяжемся с вами.'
     else
       render :new
     end

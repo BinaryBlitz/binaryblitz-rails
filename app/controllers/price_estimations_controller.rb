@@ -7,7 +7,7 @@ class PriceEstimationsController < ApplicationController
     @price_estimation = PriceEstimation.new(price_estimation_params)
 
     if @price_estimation.save || @price_estimation.attributes.values.all?(&:blank?)
-      redirect_to calculator_path, notice: 'Спасибо за вашу заявку, в ближайшее время мы свяжемся с вами.'
+      redirect_to calculator_path, notice: 'Спасибо за заявку, в ближайшее время мы свяжемся с вами.'
     else
       render :new
     end

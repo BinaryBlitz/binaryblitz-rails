@@ -2,11 +2,12 @@
 <div class="modal-form" id="modal">
   <%= form_for CallbackRequest.new, html: {class: 'form'} do |f| %>
     <h2 class="head modal-form-head">
-      Оставьте контактный номер телефона и мы перезвоним вам.
+      Оставьте номер телефона и мы перезвоним
     </h2>
-    <%= f.text_field :name, placeholder: 'Ваше имя', required: true %>
-    <%= f.text_field :phone_number, placeholder: 'Ваш номер телефона', required: true %>
-    <%= f.text_field :content, placeholder: 'Опциональный комментарий' %>
-    <%= button_tag 'заказать звонок', class: 'btn' %>
+    <%= f.text_field :name, placeholder: 'Имя', required: true %>
+    <%= f.phone_field :phone_number, placeholder: 'Номер телефона', required: true %>
+    <%= f.text_field :email, placeholder: 'Email (опционально)' %>
+    <%= f.text_field :content, placeholder: 'Комментарий (опционально)' %>
+    <%= button_tag 'Отправить', class: 'btn' %>
   <% end %>
 </div>

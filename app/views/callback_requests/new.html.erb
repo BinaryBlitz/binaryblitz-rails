@@ -13,7 +13,7 @@
             <div class="contacts-item">
               <i class="icon-footer-location"></i>
               <p>
-                Москва, ул. Большая Никитская д. 22
+                Москва, ул. Большая Никитская, д. 22
               </p>
             </div>
             <div class="contacts-item">
@@ -29,12 +29,11 @@
             Напишите нам и наши сотрудники обязательно вам помогут
           </h2>
           <%= form_for @callback_request, html: { class: 'form' } do |f| %>
-            <div class="contacts-inputs">
-              <%= f.text_field :name, placeholder: 'Ваше имя', required: true %>
-              <%= f.email_field :email, placeholder: 'Ваш email', required: true %>
-            </div>
+            <%= f.text_field :name, placeholder: 'Имя', required: true %>
+            <%= f.email_field :email, placeholder: 'Email', required: true %>
+            <%= f.phone_field :phone_number, placeholder: 'Номер телефона (опционально)' %>
             <%= f.text_area :content, placeholder: 'Ваш вопрос' %>
-            <%= button_tag 'отправить', class: 'btn' %>
+            <%= button_tag 'Отправить', class: 'btn' %>
           <% end %>
         </div>
       </div>

@@ -13,12 +13,4 @@ class CallbackRequestTest < ActiveSupport::TestCase
     @callback_request.name = nil
     assert @callback_request.invalid?
   end
-
-  test 'phone number format' do
-    @callback_request.phone_number = '1'
-    assert @callback_request.invalid?
-
-    @callback_request.phone_number = '+79998887766'
-    assert @callback_request.valid?
-  end
 end
