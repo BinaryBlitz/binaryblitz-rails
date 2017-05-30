@@ -11,8 +11,7 @@
         <!-- Calc 1 -->
         <div class="calc-item">
           <div class="calc-name">
-            Выберите одну или несколько платформ<br>
-            для вашего мобильного приложения
+            Выберите платформы приложения
           </div>
           <div class="calc-select">
             <%= f.check_box :platforms, { multiple: true }, 'ios', nil %>
@@ -32,8 +31,7 @@
         <!-- Calc 2 -->
         <div class="calc-item">
           <div class="calc-name">
-            Укажите способ регистрации в<br>
-            мобильном приложении?
+            Способ регистрации в приложении
           </div>
           <div class="calc-select">
             <%= f.check_box :registration_methods, { multiple: true }, 'phone', nil %>
@@ -53,14 +51,14 @@
             <%= f.check_box :registration_methods, { multiple: true }, 'password', nil %>
             <i class="icon-loginpass-calculator-active"></i>
             <p>
-              Логин и Пароль
+              Логин и пароль
             </p>
           </div>
         </div>
         <!-- Calc 3 -->
         <div class="calc-item">
           <div class="calc-name">
-            Использование фото/видео камеры?
+            Использование камеры
           </div>
           <div class="calc-select">
             <%= f.radio_button :camera_use, true %>
@@ -102,7 +100,7 @@
         <div class="calc-item">
           <div class="calc-name">
             Выберите один или несколько способов коммуникации<br>
-            с пользователями приложения?
+            с пользователями приложения
           </div>
           <div class="calc-select">
             <%= f.check_box :notification_methods, { multiple: true }, 'push', nil %>
@@ -115,7 +113,7 @@
             <%= f.check_box :notification_methods, { multiple: true }, 'email', nil %>
             <i class="icon-mail-calculator-active"></i>
             <p>
-              E-mail рассылки
+              Email-рассылки
             </p>
           </div>
           <div class="calc-select">
@@ -142,16 +140,14 @@
             <%= f.radio_button :specification_stage, 'half-complete' %>
             <i class="icon-incomplete-calculator-active"></i>
             <p>
-              Неполное, нуждается<br>
-              в доработке
+              Неполное, нуждается в доработке
             </p>
           </div>
           <div class="calc-select">
             <%= f.radio_button :specification_stage, 'none' %>
             <i class="icon-idea-calculator-active"></i>
             <p>
-              Нет технического задания<br>
-              только идея
+              Нет технического задания, только идея
             </p>
           </div>
         </div>
@@ -178,13 +174,13 @@
         <!-- Calc 8 -->
         <div class="calc-item">
           <div class="calc-name">
-            Указанные вами контактные данные<br>
+            Указанные контактные данные<br>
             будут использованы только для связи с вами.
           </div>
           <div class="form">
-            <%= f.text_field :name, placeholder: 'Марат', required: true %>
-            <%= f.text_field :phone_number_or_email, placeholder: 'Ваш email или номер телефона', required: true %>
-            <%= f.text_field :comment, placeholder: 'Ваши комментарии' %>
+            <%= f.text_field :name, placeholder: 'Имя', required: true %>
+            <%= f.text_field :phone_number_or_email, placeholder: 'Email или номер телефона', required: true %>
+            <%= f.text_field :comment, placeholder: 'Комментарий (опционально)' %>
           </div>
         </div>
       </div>

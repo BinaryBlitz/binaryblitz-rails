@@ -5,7 +5,7 @@
   padding: em(80) 0 em(67);
   &-head {
     font-size: em(38);
-    margin-bottom: rem(118);
+    margin-bottom: 3rem;
   }
   &-name {
     height: rem(150);
@@ -14,11 +14,11 @@
     line-height: (30/24);
   }
   &-slider {
-    margin-bottom: rem(180);
+    margin-bottom: rem(100);
     position: relative;
     .slick-dots {
       position: absolute;
-      bottom: -90px;
+      bottom: -50px;
       width: 280px;
       text-align: center;
       left: 50%;
