@@ -42,17 +42,6 @@ class PriceEstimationTest < ActiveSupport::TestCase
     assert @price_estimation.invalid?
   end
 
-  test 'communication methods from list' do
-    valid_communication_method = %w(phone email)
-    valid_communication_method.each do |method|
-      @price_estimation.communication_method = method
-      assert @price_estimation.valid?
-    end
-
-    @price_estimation.communication_method = 'a'
-    assert @price_estimation.invalid?
-  end
-
   test 'specification stages from list' do
     valid_specification_stage = %w(complete half-complete none)
     valid_specification_stage.each do |stage|

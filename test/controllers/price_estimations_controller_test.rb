@@ -11,6 +11,8 @@ class PriceEstimationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should create price estimation' do
+    @price_estimation.destroy
+
     assert_difference 'PriceEstimation.count' do
       post price_estimations_path, params: {
         price_estimation: @price_estimation.attributes

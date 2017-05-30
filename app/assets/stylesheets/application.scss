@@ -87,6 +87,20 @@ a img {
   margin-bottom: 0;
 }
 
+.alert-notice {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+  margin-top: rem(20);
+}
+
+.panel-danger {
+  margin-top: rem(20);
+}
+
+.field_with_errors input {
+  border-color: red !important;
+}
 
 
 @import 'navbar';

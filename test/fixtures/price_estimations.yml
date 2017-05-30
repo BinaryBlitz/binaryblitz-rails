@@ -1,11 +1,10 @@
 price_estimation:
   name: Name
-  phone_number: '+79991112233'
+  phone_number_or_email: '+79991112233'
   platforms: '{ ios, android }'
   registration_methods: '{ phone, password }'
   camera_use: true
   geolocation_use: true
   notification_methods: '{ push, sms }'
   comment: Comment
-  communication_method: 'email'
   specification_stage: 'complete'

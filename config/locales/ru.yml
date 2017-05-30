@@ -1,2 +1,8 @@
 ru:
-  hello: "Привет мир"
+  activerecord:
+    attributes:
+      callback_request:
+        content: Комментарий
+        email: Email
+        name: Имя
+        phone_number: Номер телефона

@@ -6,8 +6,8 @@ class PriceEstimationsController < ApplicationController
   def create
     @price_estimation = PriceEstimation.new(price_estimation_params)
 
-    if @price_estimation.save
-      redirect_to calculator_path
+    if @price_estimation.save || @price_estimation.attributes.values.all?(&:blank?)
+      redirect_to calculator_path, notice: 'Спасибо за заявку, в ближайшее время мы свяжемся с вами.'
     else
       render :new
     end
@@ -19,9 +19,9 @@ class PriceEstimationsController < ApplicationController
     params
       .require(:price_estimation)
       .permit(
-        :name, :phone_number, :comment, :communication_method,
-        :camera_use, :logo, :geolocation_use, :specification_stage,
-        platforms: [], registration_methods: [], notification_methods: []
+        :name, :phone_number_or_email, :comment, :camera_use, :logo,
+        :geolocation_use, :specification_stage, platforms: [],
+        registration_methods: [], notification_methods: []
       )
   end
 end

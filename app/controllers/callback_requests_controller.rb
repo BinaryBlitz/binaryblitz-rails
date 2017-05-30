@@ -7,9 +7,9 @@ class CallbackRequestsController < ApplicationController
     @callback_request = CallbackRequest.new(callback_request_params)
 
     if @callback_request.save
-      redirect_to root_path
+      redirect_to root_path, notice: 'Спасибо за заявку, в ближайшее время мы свяжемся с вами.'
     else
-      render template: 'pages/index'
+      render :new
     end
   end
 

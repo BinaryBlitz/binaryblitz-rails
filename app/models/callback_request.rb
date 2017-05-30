@@ -1,11 +1,13 @@
 class CallbackRequest < ApplicationRecord
-  include Phonable
+  # include Phonable
 
-  SMS_VERIFICATION_URL = 'http://sms.ru/sms/send'.freeze
+  SMS_VERIFICATION_URL = 'http://sms.ru/sms/send'
 
   validates :name, presence: true
-  validates :email, email: true, unless: 'phone_number.present?'
-  validates :phone_number, phone: true, unless: 'email.present?'
+  validates :email, presence: true, unless: 'phone_number.present?'
+  validates :email, email: true, if: 'email.present?'
+
+  validates :phone_number, presence: true, unless: 'email.present?'
 
   after_create :send_email
   after_create :send_sms_notification
