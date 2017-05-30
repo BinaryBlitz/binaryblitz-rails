@@ -1,11 +1,13 @@
 <% if object.errors.any? %>
-  <div class="panel panel-danger">
-    <div class="panel-body">
-      <ul>
-      <% object.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+  <div class="container">
+    <div class="panel panel-danger">
+      <div class="panel-body">
+        <ul>
+        <% object.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
     </div>
   </div>
 <% end %>
