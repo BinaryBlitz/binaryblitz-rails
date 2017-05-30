@@ -4,16 +4,19 @@ Rails.application.routes.draw do
 
   scope '(:locale)', locale: /en|ru/ do
     get 'contact', to: 'callback_requests#new'
+
     get 'projects', to: 'pages#projects'
     get 'calculator', to: 'price_estimations#new'
-    get 'chisto', to: 'pages#chisto'
-    get 'sportup', to: 'pages#sportup'
-    get 'gethelp', to: 'pages#gethelp'
-    get 'academia', to: 'pages#academia'
-    get 'zp', to: 'pages#zp'
-    get 'justforyou', to: 'pages#justforyou'
-    get '1na1', to: 'pages#1na1'
-    get 'getfit', to: 'pages#getfit'
+
+    # Projects
+    get 'chisto', to: 'projects#chisto'
+    get 'sportup', to: 'projects#sportup'
+    get 'gethelp', to: 'projects#gethelp'
+    get 'academia', to: 'projects#academia'
+    get 'zp', to: 'projects#zp'
+    get 'justforyou', to: 'projects#justforyou'
+    get '1na1', to: 'projects#1na1'
+    get 'getfit', to: 'projects#getfit'
 
     resources :callback_requests, only: [:create]
     resources :price_estimations, only: [:create]
