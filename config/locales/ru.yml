@@ -1,15 +1,8 @@
 ru:
-  errors:
-    format: '%{message}'
   activerecord:
-    errors:
-      models:
-        callback_request:
-          attributes:
-            phone_number:
-              invalid: 'Неправильный номер телефона'
-            email:
-              invalid: 'Неправильный email'
-            name:
-              invalid: 'Неправильно указано имя'
-              blank: 'Имя не указано'
+    attributes:
+      callback_request:
+        content: Комментарий
+        email: Email
+        name: Имя
+        phone_number: Номер телефона
