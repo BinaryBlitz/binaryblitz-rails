@@ -7,22 +7,22 @@
     max-width: 100%;
   }
   .showcase {
-    padding: em(100) 0;
+    padding: 6.25rem 0;
   }
   .head {
-    font-size: em(28);
+    font-size: 1.75em;
   }
   .showcase-text {
-    font-size: em(20);
+    font-size: 1.25em;
   }
   .about-icon {
-    width: rem(70);
+    width: 4.375rem;
   }
   .about {
-    margin: rem(70) 0;
+    margin: 4.375rem 0;
   }
   .callback {
-    padding: rem(50) 0;
+    padding: 3rem 0;
   }
   .callback-head {
     max-width: 90%;
@@ -30,10 +30,10 @@
   .copy i,
   .address i,
   .tel i {
-    margin-right: rem(10);
+    margin-right: 0.625rem;
   }
   .works-nav li {
-    margin-right: em(40);
+    margin-right: 2.5rem;
   }
   .works-logo {
     height: 5rem;
@@ -68,27 +68,27 @@
     width: 750px;
   }
   .nav li {
-    margin-right: rem(20);
+    margin-right: 1.25rem;
   }
   .about-head {
     padding-left: 0;
     max-width: 100%;
   }
   .head {
-    font-size: em(24);
+    font-size: 1.5em;
   }
   .about-items {
     padding-left: 0;
   }
   .about-text {
     max-width: 70%;
-    font-size: em(16);
+    font-size: 1em;
   }
   .works-nav li a {
     font-size: 1em;
   }
   .works-nav li {
-    margin-right: em(20);
+    margin-right: 1.25rem;
   }
   .works-item {
     width: 588px;
@@ -108,13 +108,13 @@
     width: 32%;
   }
   .contacts-item i {
-    margin-right: rem(10);
+    margin-right: 0.625rem;
   }
   .contacts-item p, .contacts-item a {
-    font-size: em(17);
+    font-size: 1em;
   }
   .contacts-item i {
-    font-size: em(24);
+    font-size: 1.5em;
   }
 }
 
@@ -211,7 +211,7 @@
     padding: 2em 0;
   }
   .showcase-links a:first-child {
-    margin-right: em(3);
+    margin-right: 0.1875rem;
   }
   .about-head {
     height: auto;
@@ -233,10 +233,10 @@
   }
   .works-nav {
     text-align: center;
-    padding: rem(20) 0;
+    padding: 1.25rem 0;
   }
   .works-nav li {
-    margin: em(8) !important;
+    margin: 0.5rem !important;
   }
   .works-item {
     max-width: 588px;
@@ -255,32 +255,32 @@
     margin-right: 4%;
   }
   .tech-img {
-    height: rem(100);
+    height: 6.25rem;
   }
   .tech-item-head {
-    margin-bottom: rem(20);
+    margin-bottom: 1.25rem;
     margin-top: 0;
   }
   .tech-item {
-    margin-bottom: em(15);
+    margin-bottom: 1rem;
   }
   .calc-name {
-    font-size: em(20);
+    font-size: 1.25em;
   }
   .calc-name br {
     display: none;
   }
   .calc-select i {
-    font-size: em(40);
+    font-size: 2.5em;
   }
   .calc-select p {
-    font-size: em(14);
+    font-size: 0.875em;
   }
   .calc-slider .slick-dots {
     bottom: -40px;
   }
   .calc-head {
-    margin-bottom: rem(30);
+    margin-bottom: 1.875rem;
   }
   .calc {
     padding: 2em 0;
@@ -289,16 +289,16 @@
     margin-bottom: 5rem;
   }
   .contacts-head {
-    margin-top: rem(10);
+    margin-top: 0.625rem;
     height: auto;
-    margin-bottom: rem(25);
+    margin-bottom: 1.5rem;
   }
   .contacts-item {
-    margin-bottom: rem(20);
+    margin-bottom: 1.25rem;
   }
   .modal-form {
     width: 280px;
-    padding: rem(20) rem(10);
+    padding: 1.25rem 0.625rem;
   }
   .fancybox-close {
     right: 4px;
@@ -318,7 +318,7 @@
 @media only screen and (max-width: 450px) {
   .works-item {
     height: 230px;
-    padding: rem(15);
+    padding: 1rem;
   }
   .contacts-inputs input {
     width: 100%;

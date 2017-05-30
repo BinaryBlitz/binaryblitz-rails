@@ -1,22 +1,22 @@
 /* Showcase */
 
 .showcase {
-  padding: em(185) 0;
+  padding: 12rem 0;
   &-head {
     margin-top: 0;
     max-width: 70%;
-    margin-bottom: rem(50);
-    padding-top: rem(50);
+    margin-bottom: 3rem;
+    padding-top: 3rem;
   }
   &-text {
-    font-size: em(24);
+    font-size: 1.5em;
     line-height: (30/24);
     max-width: 80%;
-    margin-bottom: rem(55);
+    margin-bottom: 3.5rem;
   }
   &-links {
     a:first-child {
-      margin-right: rem(18);
+      margin-right: 1.125rem;
     }
   }
 }
@@ -24,29 +24,29 @@
 /* About */
 
 .about {
-  margin-top: em(100);
-  margin-bottom: em(180);
+  margin-top: 6.25rem;
+  margin-bottom: 11rem;
   &-head {
-    height: rem(225);
-    padding-left: rem(50);
+    height: 14rem;
+    padding-left: 3rem;
     max-width: 90%;
   }
   &-items {
-    padding-left: rem(50);
+    padding-left: 3rem;
   }
   &-item {
-    margin-bottom: rem(45);
+    margin-bottom: 3rem;
   }
   &-icon {
-    width: rem(100);
+    width: 6.25rem;
     display: inline-block;
     vertical-align: middle;
     i {
-      font-size: em(45);
+      font-size: 3em;
     }
   }
   &-text {
-    font-size: em(18);
+    font-size: 1.125em;
     line-height: (26/18);
     display: inline-block;
     vertical-align: middle;
@@ -57,11 +57,11 @@
 /* Callback */
 
 .callback {
-  padding: em(100) 0 em(130);
+  padding: 6.25rem 0 8.125rem;
   &-head {
-    font-size: em(28);
+    font-size: 1.75em;
     max-width: 70%;
-    margin-top: rem(10);
+    margin-top: 0.625rem;
   }
   .form {
     padding-left: 56px;
@@ -72,12 +72,12 @@
 .form {
   input,
   textarea {
-    font-size: em(18);
+    font-size: 1.125em;
     font-family: 'Proxima Nova';
     color: $main;
     border: none;
     border-bottom: 1px solid $hover;
-    height: rem(35);
+    height: 2.1875rem;
     width: 100%;
     background: none;
     margin-bottom: 35px;
@@ -103,7 +103,7 @@
     resize: none;
   }
   button {
-    font-size: em(12);
-    margin-top: rem(30);
+    font-size: 0.75em;
+    margin-top: 1.875rem;
   }
 }
