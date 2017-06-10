@@ -5,11 +5,11 @@
 </p>
 
 <p>
-  Платформы: <%= @price_estimation.platforms.join(', ') %>
+  Платформы: <%= @price_estimation.platforms&.join(', ') %>
 </p>
 
 <p>
-  Способы регистрации: <%= @price_estimation.registration_methods.join(', ') %>
+  Способы регистрации: <%= @price_estimation.registration_methods&.join(', ') %>
 </p>
 
 <p>
@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  Способы коммуникации с пользователями: <%= @price_estimation.notification_methods.join(', ') %>
+  Способы коммуникации с пользователями: <%= @price_estimation.notification_methods&.join(', ') %>
 </p>
 
 <p>

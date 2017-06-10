@@ -2,15 +2,15 @@
 
 Время составления заявки: <%= @price_estimation.created_at.to_formatted_s(:short) %>
 
-Платформы: <%= @price_estimation.platforms.join(', ') %>
+Платформы: <%= @price_estimation.platforms&.join(', ') %>
 
-Способы регистрации: <%= @price_estimation.registration_methods.join(', ') %>
+Способы регистрации: <%= @price_estimation.registration_methods&.join(', ') %>
 
 Использование камеры: <%= @price_estimation.camera_use %>
 
 Использование геопозиции: <%= @price_estimation.geolocation_use %>
 
-Способы коммуникации с пользователями: <%= @price_estimation.notification_methods.join(', ') %>
+Способы коммуникации с пользователями: <%= @price_estimation.notification_methods&.join(', ') %>
 
 Техническое задание: <%= @price_estimation.specification_stage %>
 
