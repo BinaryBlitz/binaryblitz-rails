@@ -38,13 +38,9 @@ body {
 
 a {
   color: $main;
-  font-weight: 400;
-  font-family: 'Proxima Nova';
   text-decoration: none;
   transition: 300ms;
-  display: inline-block;
-  line-height: 1;
-  font-size: 1em;
+
   &:hover,
   &:focus {
     text-decoration: none;
