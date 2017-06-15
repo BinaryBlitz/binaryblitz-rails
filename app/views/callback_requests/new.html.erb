@@ -4,11 +4,9 @@
 <section class="contacts-wrap">
   <div class="container">
     <div class="contacts">
+      <h1 class="contacts-head">Мы всегда на связи</h1>
       <div class="row">
         <div class="col-sm-6">
-          <h2 class="head contacts-head">
-            Мы всегда доступны, и вы можете связаться с нами
-          </h2>
           <div class="contacts-items">
             <div class="contacts-item">
               <i class="icon-footer-location"></i>
@@ -17,7 +15,7 @@
               </p>
             </div>
             <div class="contacts-item">
-              <i class="icon-phone"></i> <a href="tel:79855558860">+7 985 555 88 60</a>
+              <i class="icon-phone"></i> <a href="tel:79855558860">+7 985 555-88-60</a>
             </div>
             <div class="contacts-item">
               <i class="icon-email-calculator-active"></i> <a href="mailto:info@binaryblitz.ru">info@binaryblitz.ru</a>
@@ -25,9 +23,6 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <h2 class="contacts-head head">
-            Напишите нам и наши сотрудники обязательно вам помогут
-          </h2>
           <%= form_for @callback_request, html: { class: 'form' } do |f| %>
             <%= f.text_field :name, placeholder: 'Имя', required: true %>
             <%= f.email_field :email, placeholder: 'Email', required: true %>
