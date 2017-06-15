@@ -97,6 +97,23 @@ a img {
   border-color: red !important;
 }
 
+// Button
+
+.btn {
+  line-height: 2.25rem;
+  border: 1px solid $main;
+  border-radius: 1.125rem;
+  padding: 0 1.125rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.75em;
+  background: none;
+  transition: 300ms;
+  &:hover {
+    background: $main;
+    color: #fff;
+  }
+}
 
 @import 'navbar';
 @import 'index';
