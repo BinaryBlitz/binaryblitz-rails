@@ -153,9 +153,9 @@
       </div>
       <div class="col-sm-6">
         <%= form_for CallbackRequest.new, html: { class: 'form' } do |f| %>
-          <%= f.text_field :name, placeholder: 'Ваше имя', required: true %>
-          <%= f.email_field :email, placeholder: 'Ваш email', required: true %>
-          <%= f.text_field :content, placeholder: 'Ваш вопрос' %>
+          <%= f.text_field :name, placeholder: 'Имя', required: true %>
+          <%= f.email_field :email, placeholder: 'Email', required: true %>
+          <%= f.text_field :content, placeholder: 'Вопрос' %>
           <%= button_tag 'отправить', class: 'btn' %>
         <% end %>
       </div>
