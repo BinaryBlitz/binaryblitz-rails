@@ -12,8 +12,6 @@
 //
 //= require rails-ujs
 //= require jquery
-//= require jquery_ujs
 //= require turbolinks
 //= require fancybox
-//= require jquery.fancybox.pack
 //= require_tree .
