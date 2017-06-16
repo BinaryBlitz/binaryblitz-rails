@@ -37,7 +37,10 @@ gem 'rails-i18n'
 # Monitoring
 gem 'rollbar'
 
-gem 'rails-assets-fancybox', source: 'https://rails-assets.org'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-fancybox', '~> 3.1'
+  gem 'rails-assets-slick.js', '~> 1.6'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
