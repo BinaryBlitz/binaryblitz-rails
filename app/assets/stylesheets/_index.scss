@@ -1,7 +1,7 @@
 /* Showcase */
 
 .showcase {
-  padding: 12rem 0;
+  padding: 6rem 0 4rem;
   &-head {
     margin-top: 0;
     max-width: 70%;
@@ -19,13 +19,15 @@
       margin-right: 1.125rem;
     }
   }
+  &-image {
+    margin-top: 1.5rem;
+  }
 }
 
 /* About */
 
 .about {
-  margin-top: 6.25rem;
-  margin-bottom: 11rem;
+  margin: 4rem 0;
   &-head {
     height: 7rem;
     padding-left: 3rem;
@@ -57,7 +59,7 @@
 /* Callback */
 
 .callback {
-  padding: 6.25rem 0 8.125rem;
+  padding: 4rem 0 8.125rem;
   &-head {
     font-size: 1.75em;
     max-width: 70%;

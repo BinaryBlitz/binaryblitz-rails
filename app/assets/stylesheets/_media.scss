@@ -7,7 +7,10 @@
     max-width: 100%;
   }
   .showcase {
-    padding: 6.25rem 0;
+    padding: 4rem 0 2rem;
+    &-image {
+      margin-top: 4rem;
+    }
   }
   .head {
     font-size: 1.75em;
@@ -19,7 +22,7 @@
     width: 4.375rem;
   }
   .about {
-    margin: 4.375rem 0;
+    margin: 4rem 0;
   }
   .callback {
     padding: 3rem 0;
@@ -208,7 +211,10 @@
     padding-bottom: 1em;
   }
   .showcase {
-    padding: 2em 0;
+    padding: 3em 0 1.5rem;
+    &-image {
+      margin-top: 0;
+    }
   }
   .showcase-links a:first-child {
     margin-right: 0.1875rem;
