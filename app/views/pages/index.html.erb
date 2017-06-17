@@ -1,154 +1,156 @@
-<!-- Showcase -->
-<section class="showcase">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-sm-push-6">
-        <img alt="" src="/images/iPhone-screen.png">
-      </div>
-      <div class="col-sm-6 col-sm-pull-6">
-        <h2 class="showcase-head head">
-          Мобильные приложения
-        </h2>
-        <p class="showcase-text">
-          В процессе разработки мы используем современные технологии и передовые дизайнерские решения. Пользователи полюбят ваш продукт.
-        </p>
-        <div class="showcase-links">
-          <%= link_to 'наши проекты', projects_path, class: 'btn' %>
-          <%= link_to 'рассчитать стоимость', calculator_path, class: 'btn' %>
+<% cache do %>
+  <!-- Showcase -->
+  <section class="showcase">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-6">
+          <img alt="" src="/images/iPhone-screen.png">
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Showcase -->
-<section class="showcase showcase-second cf">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 col-sm-push-7">
-        <img alt="" src="/images/iMac.png" class="showcase-image">
-      </div>
-      <div class="col-sm-7 col-sm-pull-5">
-        <h2 class="showcase-head head">
-          Сайты и веб-приложения
-        </h2>
-        <p class="showcase-text">
-          Мы создаём проекты любой сложности: от простых лендингов и сайтов-визиток до многофункциональных веб-приложений и интернет-магазинов.
-        </p>
-        <p class="showcase-text">
-          Сайт будет приносить пользу: продвигать бренд, привлекать звонки и увеличивать продажи — то, что необходимо вашему бизнесу.
-        </p>
-        <div class="showcase-links">
-          <%= link_to 'наши проекты', projects_path, class: 'btn' %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- About -->
-<section class="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2 class="about-head head">
-          Дизайн для продукта или бренда
-        </h2>
-        <div class="about-items">
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-strategy"></i>
-            </div>
-            <div class="about-text">
-              Разработка концепта бренда
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-brand"></i>
-            </div>
-            <div class="about-text">
-              Создание логотипа и фирменного стиля
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-webmob"></i>
-            </div>
-            <div class="about-text">
-              Дизайн сайтов и мобильных приложений
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-ads"></i>
-            </div>
-            <div class="about-text">
-              Баннеры, визитки и листовки
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <h2 class="about-head head">
-          Консультации по продвижению и разработке
-        </h2>
-        <div class="about-items">
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-marketingplan"></i>
-            </div>
-            <div class="about-text">
-              Рекомендации по повышению конверсии продаж
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-auditcode"></i>
-            </div>
-            <div class="about-text">
-              Аудит исходного кода программы
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-analysis"></i>
-            </div>
-            <div class="about-text">
-              Рекомендации по улучшению дизайна продукта
-            </div>
-          </div>
-          <div class="about-item">
-            <div class="about-icon">
-              <i class="icon-tz"></i>
-            </div>
-            <div class="about-text">
-              Составление технического задания
-            </div>
+        <div class="col-sm-6 col-sm-pull-6">
+          <h2 class="showcase-head head">
+            Мобильные приложения
+          </h2>
+          <p class="showcase-text">
+            В процессе разработки мы используем современные технологии и передовые дизайнерские решения. Пользователи полюбят ваш продукт.
+          </p>
+          <div class="showcase-links">
+            <%= link_to 'наши проекты', projects_path, class: 'btn' %>
+            <%= link_to 'рассчитать стоимость', calculator_path, class: 'btn' %>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Callback -->
-<section class="callback">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2 class="head callback-head">
-          Помогите нам помочь вам
-        </h2>
-        <p class="showcase-text">
-          Опишите свою задачу и мы поможем найти оптимальное решение.
-        </p>
-      </div>
-      <div class="col-sm-6">
-        <%= form_for CallbackRequest.new, html: { class: 'form' } do |f| %>
-          <%= f.text_field :name, placeholder: 'Имя', required: true %>
-          <%= f.email_field :email, placeholder: 'Email', required: true %>
-          <%= f.text_field :content, placeholder: 'Вопрос' %>
-          <%= button_tag 'отправить', class: 'btn' %>
-        <% end %>
+  </section>
+  <!-- Showcase -->
+  <section class="showcase showcase-second cf">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-sm-push-7">
+          <img alt="" src="/images/iMac.png" class="showcase-image">
+        </div>
+        <div class="col-sm-7 col-sm-pull-5">
+          <h2 class="showcase-head head">
+            Сайты и веб-приложения
+          </h2>
+          <p class="showcase-text">
+            Мы создаём проекты любой сложности: от простых лендингов и сайтов-визиток до многофункциональных веб-приложений и интернет-магазинов.
+          </p>
+          <p class="showcase-text">
+            Сайт будет приносить пользу: продвигать бренд, привлекать звонки и увеличивать продажи — то, что необходимо вашему бизнесу.
+          </p>
+          <div class="showcase-links">
+            <%= link_to 'наши проекты', projects_path, class: 'btn' %>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="about-head head">
+            Дизайн для продукта или бренда
+          </h2>
+          <div class="about-items">
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-strategy"></i>
+              </div>
+              <div class="about-text">
+                Разработка концепта бренда
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-brand"></i>
+              </div>
+              <div class="about-text">
+                Создание логотипа и фирменного стиля
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-webmob"></i>
+              </div>
+              <div class="about-text">
+                Дизайн сайтов и мобильных приложений
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-ads"></i>
+              </div>
+              <div class="about-text">
+                Баннеры, визитки и листовки
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h2 class="about-head head">
+            Консультации по продвижению и разработке
+          </h2>
+          <div class="about-items">
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-marketingplan"></i>
+              </div>
+              <div class="about-text">
+                Рекомендации по повышению конверсии продаж
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-auditcode"></i>
+              </div>
+              <div class="about-text">
+                Аудит исходного кода программы
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-analysis"></i>
+              </div>
+              <div class="about-text">
+                Рекомендации по улучшению дизайна продукта
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon">
+                <i class="icon-tz"></i>
+              </div>
+              <div class="about-text">
+                Составление технического задания
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Callback -->
+  <section class="callback">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="head callback-head">
+            Помогите нам помочь вам
+          </h2>
+          <p class="showcase-text">
+            Опишите свою задачу и мы поможем найти оптимальное решение.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <%= form_for CallbackRequest.new, html: { class: 'form' } do |f| %>
+            <%= f.text_field :name, placeholder: 'Имя', required: true %>
+            <%= f.email_field :email, placeholder: 'Email', required: true %>
+            <%= f.text_field :content, placeholder: 'Вопрос' %>
+            <%= button_tag 'отправить', class: 'btn' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>

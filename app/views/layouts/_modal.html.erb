@@ -1,13 +1,15 @@
-<!-- Modal -->
-<div class="modal-form" id="modal">
-  <%= form_for CallbackRequest.new, html: {class: 'form'} do |f| %>
-    <h2 class="head modal-form-head">
-      Оставьте номер телефона и мы перезвоним
-    </h2>
-    <%= f.text_field :name, placeholder: 'Имя', required: true %>
-    <%= f.phone_field :phone_number, placeholder: 'Номер телефона', required: true %>
-    <%= f.text_field :email, placeholder: 'Email (опционально)' %>
-    <%= f.text_field :content, placeholder: 'Комментарий (опционально)' %>
-    <%= button_tag 'Отправить', class: 'btn' %>
-  <% end %>
-</div>
+<% cache do %>
+  <!-- Modal -->
+  <div class="modal-form" id="modal">
+    <%= form_for CallbackRequest.new, html: {class: 'form'} do |f| %>
+      <h2 class="head modal-form-head">
+        Оставьте номер телефона и мы перезвоним
+      </h2>
+      <%= f.text_field :name, placeholder: 'Имя', required: true %>
+      <%= f.phone_field :phone_number, placeholder: 'Номер телефона', required: true %>
+      <%= f.text_field :email, placeholder: 'Email (опционально)' %>
+      <%= f.text_field :content, placeholder: 'Комментарий (опционально)' %>
+      <%= button_tag 'Отправить', class: 'btn' %>
+    <% end %>
+  </div>
+<% end %>
