@@ -13,10 +13,8 @@ Rails.application.routes.draw do
     get 'sportup', to: 'projects#sportup'
     get 'gethelp', to: 'projects#gethelp'
     get 'academia', to: 'projects#academia'
-    get 'zp', to: 'projects#zp'
     get 'justforyou', to: 'projects#justforyou'
-    get '1na1', to: 'projects#1na1'
-    get 'getfit', to: 'projects#getfit'
+    get 'onevsone', to: 'projects#onevsone'
 
     resources :callback_requests, only: [:create]
     resources :price_estimations, only: [:create]
