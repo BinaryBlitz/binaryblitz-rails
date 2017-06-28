@@ -9,12 +9,9 @@ Rails.application.routes.draw do
     get 'calculator', to: 'price_estimations#new'
 
     # Projects
-    get 'chisto', to: 'projects#chisto'
-    get 'sportup', to: 'projects#sportup'
-    get 'gethelp', to: 'projects#gethelp'
-    get 'academia', to: 'projects#academia'
-    get 'justforyou', to: 'projects#justforyou'
-    get 'onevsone', to: 'projects#onevsone'
+    scope 'projects', controller: :projects do
+      get 'academia', 'chisto', 'gethelp', 'justforyou', 'sportup', 'onevsone'
+    end
 
     resources :callback_requests, only: [:create]
     resources :price_estimations, only: [:create]
