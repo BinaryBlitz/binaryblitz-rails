@@ -26,6 +26,9 @@ gem 'turbolinks', '~> 5'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# Views
+gem 'bootstrap-sass', '~> 3.3'
+
 # Utilities
 gem 'httparty'
 gem 'phonelib'
