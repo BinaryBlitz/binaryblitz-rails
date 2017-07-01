@@ -8,14 +8,14 @@
         </div>
         <div class="col-sm-6 col-sm-pull-6">
           <h2 class="showcase-head head">
-            Мобильные приложения
+            <%= t('.mobile_apps.head') %>
           </h2>
           <p class="showcase-text">
-            В процессе разработки мы используем современные технологии и передовые дизайнерские решения. Пользователи полюбят ваш продукт.
+            <%= t('.mobile_apps.description') %>
           </p>
           <div class="showcase-links">
-            <%= link_to 'наши проекты', projects_path, class: 'btn' %>
-            <%= link_to 'рассчитать стоимость', calculator_path, class: 'btn' %>
+            <%= link_to t('.mobile_apps.projects'), projects_path, class: 'btn' %>
+            <%= link_to t('.mobile_apps.estimate_price'), calculator_path, class: 'btn' %>
           </div>
         </div>
       </div>
@@ -30,14 +30,9 @@
         </div>
         <div class="col-sm-7 col-sm-pull-5">
           <h2 class="showcase-head head">
-            Сайты и веб-приложения
+            <%= t('.web.head') %>
           </h2>
-          <p class="showcase-text">
-            Мы создаём проекты любой сложности: от простых лендингов и сайтов-визиток до многофункциональных веб-приложений и интернет-магазинов.
-          </p>
-          <p class="showcase-text">
-            Сайт будет приносить пользу: продвигать бренд, привлекать звонки и увеличивать продажи — то, что необходимо вашему бизнесу.
-          </p>
+          <%= simple_format t('.web.description'), class: 'showcase-text' %>
           <div class="showcase-links">
             <%= link_to 'наши проекты', projects_path, class: 'btn' %>
           </div>
@@ -51,7 +46,7 @@
       <div class="row">
         <div class="col-sm-6">
           <h2 class="about-head head">
-            Дизайн для продукта или бренда
+            <%= t('.about.design.head') %>
           </h2>
           <div class="about-items">
             <div class="about-item">
@@ -59,7 +54,7 @@
                 <i class="icon-strategy"></i>
               </div>
               <div class="about-text">
-                Разработка концепта бренда
+                <%= t('.about.design.item_1') %>
               </div>
             </div>
             <div class="about-item">
@@ -67,7 +62,7 @@
                 <i class="icon-brand"></i>
               </div>
               <div class="about-text">
-                Создание логотипа и фирменного стиля
+                <%= t('.about.design.item_2') %>
               </div>
             </div>
             <div class="about-item">
@@ -75,7 +70,7 @@
                 <i class="icon-webmob"></i>
               </div>
               <div class="about-text">
-                Дизайн сайтов и мобильных приложений
+                <%= t('.about.design.item_3') %>
               </div>
             </div>
             <div class="about-item">
@@ -83,14 +78,14 @@
                 <i class="icon-ads"></i>
               </div>
               <div class="about-text">
-                Баннеры, визитки и листовки
+                <%= t('.about.design.item_4') %>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <h2 class="about-head head">
-            Консультации по продвижению и разработке
+            <%= t('.about.consulting.head') %>
           </h2>
           <div class="about-items">
             <div class="about-item">
@@ -98,7 +93,7 @@
                 <i class="icon-marketingplan"></i>
               </div>
               <div class="about-text">
-                Рекомендации по повышению конверсии продаж
+                <%= t('.about.consulting.item_1') %>
               </div>
             </div>
             <div class="about-item">
@@ -106,7 +101,7 @@
                 <i class="icon-auditcode"></i>
               </div>
               <div class="about-text">
-                Аудит исходного кода программы
+                <%= t('.about.consulting.item_2') %>
               </div>
             </div>
             <div class="about-item">
@@ -114,7 +109,7 @@
                 <i class="icon-analysis"></i>
               </div>
               <div class="about-text">
-                Рекомендации по улучшению дизайна продукта
+                <%= t('.about.consulting.item_3') %>
               </div>
             </div>
             <div class="about-item">
@@ -122,7 +117,7 @@
                 <i class="icon-tz"></i>
               </div>
               <div class="about-text">
-                Составление технического задания
+                <%= t('.about.consulting.item_4') %>
               </div>
             </div>
           </div>
@@ -136,18 +131,18 @@
       <div class="row">
         <div class="col-sm-6">
           <h2 class="head callback-head">
-            Помогите нам помочь вам
+            <%= t('.callback.head') %>
           </h2>
           <p class="showcase-text">
-            Опишите свою задачу и мы поможем найти оптимальное решение.
+            <%= t('.callback.description') %>
           </p>
         </div>
         <div class="col-sm-6">
           <%= form_for CallbackRequest.new, html: { class: 'form' } do |f| %>
-            <%= f.text_field :name, placeholder: 'Имя', required: true %>
-            <%= f.email_field :email, placeholder: 'Email', required: true %>
-            <%= f.text_field :content, placeholder: 'Вопрос' %>
-            <%= button_tag 'отправить', class: 'btn' %>
+            <%= f.text_field :name, placeholder: true, required: true %>
+            <%= f.email_field :email, placeholder: true, required: true %>
+            <%= f.text_field :content, placeholder: true %>
+            <%= f.button class: 'btn' %>
           <% end %>
         </div>
       </div>

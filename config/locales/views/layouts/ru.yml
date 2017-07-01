@@ -1,0 +1,6 @@
+ru:
+  layouts:
+    navbar:
+      projects: "Проекты"
+      contact: "Контекты"
+      calculator: "Калькулятор"

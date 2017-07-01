@@ -6,3 +6,7 @@ ru:
         email: Email
         name: Имя
         phone_number: Номер телефона
+  helpers:
+    submit:
+      callback_request:
+        create: Отправить

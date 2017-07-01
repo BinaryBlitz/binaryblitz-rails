@@ -1,0 +1,28 @@
+en:
+  pages:
+    index:
+      mobile_apps:
+        head: "Mobile apps"
+        description: "We use modern technologies and innovative design solutions when developing our apps. The users will love your product."
+        projects: "Our projects"
+        estimate_price: "Estimate price"
+      web:
+        head: "Web"
+        description: |
+          We build projects of any complexity: from simple landing and promo pages to smart web applications and online stores. Your site will increase your profits, promote the brand, generate calls and boost sales — everything for your business needs.
+      about:
+        design:
+          head: "Brand and product design"
+          item_1: "Brand building"
+          item_2: "Logo and brand book creation"
+          item_3: "Mobile and web design"
+          item_4: "Banners, business cards, leaflets"
+        consulting:
+          head: "Development and marketing consulting"
+          item_1: "Increasing sales conversion"
+          item_2: "Source code audit"
+          item_3: "Design recommendations"
+          item_4: "Specification drafting"
+      callback:
+        head: "Help us help you"
+        description: "Tell us about your needs and we will find the optimal solution."

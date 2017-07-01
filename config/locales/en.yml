@@ -30,4 +30,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      callback_request:
+        content: Content
+        email: Email
+        name: Name
+        phone_number: Phone number
+  helpers:
+    submit:
+      callback_request:
+        create: Send

@@ -1,0 +1,6 @@
+en:
+  layouts:
+    navbar:
+      projects: "Projects"
+      contact: "Contact"
+      calculator: "Estimate price"
