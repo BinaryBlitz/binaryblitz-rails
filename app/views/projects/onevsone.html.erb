@@ -5,15 +5,15 @@
       <div class="row">
         <div class="project">
           <div class="col-sm-7">
-            <a class="project-back" href="/projects"><i class="icon-back-w"></i> Проекты</a>
+            <a class="project-back" href="/projects"><i class="icon-back-w"></i> <%= t('projects.back') %></a>
             <div class="project-type">
-              Мобильное приложение
+              <%= t('projects.types.app') %>
             </div><img alt="" class="project-logo" src="/images/projects/onevsone/onevsone-logo.png">
             <h2 class="project-head">
-              Онлайн викторина
+              <%= t('.head') %>
             </h2>
             <p class="project-descr">
-              Соревнуйся один на один с друзьями в интересных для тебя областях жизни или играй с соперниками в специальных комнатах. Получай награды и становись лучшим.
+              <%= t('.description') %>
             </p>
             <div class="project-links">
               <a href="https://itunes.apple.com/us/app/1-на-1/id1017347211?ls=1&mt=8"><img alt="" src="/images/app-store.png"></a>
@@ -35,17 +35,9 @@
         <div class="row">
           <div class="col-sm-6">
             <h2 class="app-head head">
-              O приложении
+              <%= t('projects.about') %>
             </h2>
-            <p>
-              В течение нескольких недель после запуска приложение вышло на лидирующие позиции в разделах «Игры» российского App Store.
-            </p>
-            <p>
-              Пользователи могут соревноваться в интеллектуальной борьбе со своими друзьями один на один либо в комнатах до пяти человек.
-            </p>
-            <p>
-              Разнообразие тем, игры в режиме реального времени, рейтинги игроков и многое другое делают этот приложение одной из наших самых ярких работ.
-            </p>
+            <%= simple_format t('.about') %>
           </div>
           <div class="col-sm-6">
             <div class="app-images">
@@ -62,7 +54,7 @@
     <div class="container">
       <div class="tech">
         <h2 class="tech-head head">
-          Технологии
+          <%= t('projects.technologies') %>
         </h2>
         <div class="row">
           <div class="col-sm-4">

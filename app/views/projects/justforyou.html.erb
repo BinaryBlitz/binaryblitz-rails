@@ -5,15 +5,15 @@
       <div class="row">
         <div class="project">
           <div class="col-sm-7">
-            <a class="project-back" href="/projects"><i class="icon-back-w"></i> Проекты</a>
+            <a class="project-back" href="/projects"><i class="icon-back-w"></i> <%= t('projects.back') %></a>
             <div class="project-type">
-              Мобильное приложение
+              <%= t('projects.types.app') %>
             </div><img alt="" class="project-logo" src="/images/projects/justforyou/justforyou-logo.png">
             <h2 class="project-head">
-              Доставка диетической еды
+              <%= t('.head') %>
             </h2>
             <p class="project-descr">
-              Проект сбалансированного питания JUST FOR YOU создан в 2006 году в Москве доктором Ириной Почитаевой и ресторатором Аркадием Новиковым.
+              <%= t('.description') %>
             </p>
             <div class="project-links">
               <a href="https://itunes.apple.com/us/app/just-for-you/id1123372509"><img alt="" src="/images/app-store.png"></a>
@@ -35,14 +35,9 @@
         <div class="row">
           <div class="col-sm-6">
             <h2 class="app-head head">
-              О приложении
+              <%= t('projects.about') %>
             </h2>
-            <p>
-              Мы создали мобильное приложение, с помощью которого клиенты могут подобрать подходящую программу питания — узнать информацию о меню программы, её калорийности, рекомендациях диетолога.
-            </p>
-            <p>
-              После оплаты заказа клиент распределяет даты доставки с помощью удобного календаря. Клиент может исключить из программы продукты, которые он не использует в своем рационе.
-            </p>
+            <%= simple_format t('.about') %>
           </div>
           <div class="col-sm-6">
             <div class="app-images">
@@ -58,7 +53,7 @@
     <div class="container">
       <div class="tech">
         <h2 class="tech-head head">
-          Технологии
+          <%= t('projects.technologies') %>
         </h2>
         <div class="row">
           <div class="col-sm-4">

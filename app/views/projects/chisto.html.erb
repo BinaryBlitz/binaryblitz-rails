@@ -5,15 +5,15 @@
       <div class="row">
         <div class="project">
           <div class="col-sm-7">
-            <a class="project-back" href="/projects"><i class="icon-back-w"></i> Проекты</a>
+            <a class="project-back" href="/projects"><i class="icon-back-w"></i> <%= t('projects.back') %></a>
             <div class="project-type">
-              Мобильное приложение
+              <%= t('projects.types.app') %>
             </div><img alt="" class="project-logo" src="/images/projects/chisto/chisto-logo.png">
             <h2 class="project-head">
-              Все химчистки в одном приложении
+              <%= t('.head') %>
             </h2>
             <p class="project-descr">
-              Содержите вещи в чистоте не выходя из дома вместе с Chisto. Больше не нужно ходить в химчистку. Курьер заберёт вещи и вернёт их чистыми.
+              <%= t('.description') %>
             </p>
             <div class="project-links">
               <a href="https://itunes.apple.com/us/app/chisto/id1165430647"><img alt="" src="/images/app-store.png"></a>
@@ -36,17 +36,9 @@
         <div class="row">
           <div class="col-sm-6">
             <h2 class="app-head head">
-              О приложении
+              <%= t('projects.about') %>
             </h2>
-            <p>
-              С приложением Chisto вам больше не нужно тратить время на походы в химчистку.
-            </p>
-            <p>
-              Выберите подходящего исполнителя по цене и срокам выполнения заказа.
-            </p>
-            <p>
-              Оплатите заказ банковской картой в приложении, через Apple Pay или наличными курьеру.
-            </p>
+            <%= simple_format t('.about') %>
           </div>
           <div class="col-sm-6">
             <div class="app-images">
@@ -62,7 +54,7 @@
     <div class="container">
       <div class="tech">
         <h2 class="tech-head head">
-          Технологии
+          <%= t('projects.technologies') %>
         </h2>
         <div class="row">
           <div class="col-sm-4">

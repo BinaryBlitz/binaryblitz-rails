@@ -5,15 +5,15 @@
       <div class="row">
         <div class="project">
           <div class="col-sm-7">
-            <a class="project-back" href="/projects"><i class="icon-back-w"></i> Проекты</a>
+            <a class="project-back" href="/projects"><i class="icon-back-w"></i> <%= t('projects.back') %></a>
             <div class="project-type">
-              Мобильное приложение
+              <%= t('projects.types.app') %>
             </div><img alt="" class="project-logo" src="/images/projects/sportup/sportup-logo.png">
             <h2 class="project-head">
-              Поиск спортивных событий
+              <%= t('.head') %>
             </h2>
             <p class="project-descr">
-              Если вы хотите найти компанию для игры в футбол или в вашей команде не хватает игроков — SportUp быстро решит эту проблему.
+              <%= t('.description') %>
             </p>
             <div class="project-links">
               <a href="#"><img alt="" src="/images/app-store.png"></a>
@@ -36,17 +36,9 @@
         <div class="row">
           <div class="col-sm-6">
             <h2 class="app-head head">
-              О приложении
+              <%= t('projects.about') %>
             </h2>
-            <p>
-              В приложении пользователи могут искать игры других участников сообщества, а также создавать свои игры, в которые они могут позвать своих друзей. Каким бы видом спорта вы ни занимались, в SportUp всегда найдется команда.
-            </p>
-            <p>
-              До игры участники распределяются на команды. А после окончания участники голосуют за лучшего игрока матча и сообщают о некорректном поведении во время игры.
-            </p>
-            <p>
-              С помощью Telegram-бота можно управлять созданными событиями прямо в групповом чате команды.
-            </p>
+            <%= simple_format t('.about') %>
           </div>
           <div class="col-sm-6">
             <div class="app-images">
@@ -62,7 +54,7 @@
     <div class="container">
       <div class="tech">
         <h2 class="tech-head head">
-          Технологии
+          <%= t('projects.technologies') %>
         </h2>
         <div class="row">
           <div class="col-sm-4">

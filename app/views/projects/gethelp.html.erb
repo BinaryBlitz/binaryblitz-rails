@@ -5,15 +5,15 @@
       <div class="row">
         <div class="project">
           <div class="col-sm-7">
-            <a class="project-back" href="/projects"><i class="icon-back-w"></i> Проекты</a>
+            <a class="project-back" href="/projects"><i class="icon-back-w"></i> <%= t('projects.back') %></a>
             <div class="project-type">
-              Мобильное приложение
+              <%= t('projects.types.app') %>
             </div><img alt="" class="project-logo" src="/images/projects/gethelp/gethelp-logo.png">
             <h2 class="project-head">
-              Помощник студента
+              <%= t('.head') %>
             </h2>
             <p class="project-descr">
-              GetHelp — сервис написания студенческих работ. Квалифицированные специалисты уже несколько лет помогают студентам справиться c проблемами в учёбе.
+              <%= t('.description') %>
             </p>
             <div class="project-links">
               <a href="https://itunes.apple.com/us/app/gethelp-помощник-в-учебе/id1073331646?ls=1&mt=8"><img alt="" src="/images/app-store.png"></a>
@@ -36,14 +36,9 @@
         <div class="row">
           <div class="col-sm-6">
             <h2 class="app-head head">
-              О приложении
+              <%= t('projects.about') %>
             </h2>
-            <p>
-              Доступна помощь для домашних заданий, переводов, эссе, рефератов, курсовых, дипломов и других типов работ. GetHelp — единственное приложение подобной тематики в App Store.
-            </p>
-            <p>
-              Общение с оператором происходит в чате, где клиент может не только отправлять сообщения, но и делиться фотографиями со своим помощником. После согласования всех деталей пользователь оплачивает заказ онлайн.
-            </p>
+            <%= simple_format t('.about') %>
           </div>
           <div class="col-sm-6">
             <div class="app-images">
@@ -59,7 +54,7 @@
     <div class="container">
       <div class="tech">
         <h2 class="tech-head head">
-          Технологии
+          <%= t('projects.technologies') %>
         </h2>
         <div class="row">
           <div class="col-sm-4">
