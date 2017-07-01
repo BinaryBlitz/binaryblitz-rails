@@ -12,13 +12,13 @@
           </div>
           <ul>
             <li>
-              <a href="/projects">Проекты</a>
+              <a href="/projects"><%= t('.projects') %></a>
             </li>
             <li>
-              <a href="/contact">Контакты</a>
+              <a href="/contact"><%= t('.contact') %></a>
             </li>
             <li>
-              <a href="/calculator">Калькулятор</a>
+              <a href="/calculator"><%= t('.calculator') %></a>
             </li>
           </ul>
         </nav>
@@ -30,7 +30,9 @@
           <% else %>
             <%= link_to 'RU', url_for(locale: :ru), class: 'lang' %>
           <% end %>
-          <a class="callback-link btn" href="javascript:;" data-src="#modal" data-fancybox="modal">Обратный звонок</a>
+          <a class="callback-link btn" href="javascript:;" data-src="#modal" data-fancybox="modal">
+            <%= t('.callback') %>
+          </a>
         </div>
       </div>
     </div>
