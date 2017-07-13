@@ -26,9 +26,9 @@
       <div class="col-sm-4">
         <div class="header-links">
           <% if I18n.locale == I18n.default_locale %>
-            <%= link_to 'EN', url_for(locale: :en), class: 'lang' %>
+            <%= link_to 'EN', url_for(host: 'binaryblitz.xyz'), class: 'lang' %>
           <% else %>
-            <%= link_to 'RU', url_for(locale: :ru), class: 'lang' %>
+            <%= link_to 'RU', url_for(host: 'binaryblitz.ru'), class: 'lang' %>
           <% end %>
           <a class="callback-link btn" href="javascript:;" data-src="#modal" data-fancybox="modal">
             <%= t('.callback') %>
