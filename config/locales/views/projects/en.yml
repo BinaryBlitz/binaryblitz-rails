@@ -7,7 +7,7 @@ en:
       app: "Mobile app"
       web: "Website"
     academia:
-      head: "Network of city cafes"
+      head: "Chain of city cafes"
       description: "Academia exists for more than 10 years. 9 restaurants were opened during this time under this brand."
       about: |
         We made an app where users can look through the menu and place orders for delivery. The user enters the address, selects delivery time and pays the order with a credit card. Built-in bonus system stimulates repeated orders and attracts new customers.
