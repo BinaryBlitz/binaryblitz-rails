@@ -6,7 +6,16 @@ ru:
         email: Email
         name: Имя
         phone_number: Номер телефона
+      price_estimation:
+        name: "Имя"
+        comment: "Комментарий"
+        phone_number_or_email: "Email или номер телефона"
   helpers:
+    placeholder:
+      price_estimation:
+        comment: "Комментарий (опционально)"
     submit:
       callback_request:
-        create: Отправить
+        create: "Отправить"
+      price_estimation:
+        create: "Отправить"

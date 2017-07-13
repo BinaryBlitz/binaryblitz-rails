@@ -5,13 +5,13 @@
   <div class="container">
     <%= form_for @price_estimation, html: { class: 'calc' } do |f| %>
       <h2 class="calc-head head">
-        Калькулятор стоимости приложения
+        <%= t('.head') %>
       </h2>
       <div class="calc-slider">
         <!-- Calc 1 -->
         <div class="calc-item">
           <div class="calc-name">
-            Выберите платформы приложения
+            <%= t('.steps.platforms.content') %>
           </div>
           <div class="calc-select">
             <%= f.check_box :platforms, { multiple: true }, 'ios', nil %>
@@ -31,162 +31,164 @@
         <!-- Calc 2 -->
         <div class="calc-item">
           <div class="calc-name">
-            Способ регистрации в приложении
+            <%= t('.steps.registration_methods.content') %>
           </div>
           <div class="calc-select">
             <%= f.check_box :registration_methods, { multiple: true }, 'phone', nil %>
             <i class="icon-mobilnum-calculator-active"></i>
             <p>
-              Номер телефона
+              <%= t('.steps.registration_methods.phone_number') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.check_box :registration_methods, { multiple: true }, 'socials', nil %>
             <i class="icon-social-calculator-active"></i>
             <p>
-              Социальные сети
+              <%= t('.steps.registration_methods.social_networks') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.check_box :registration_methods, { multiple: true }, 'password', nil %>
             <i class="icon-loginpass-calculator-active"></i>
             <p>
-              Логин и пароль
+              <%= t('.steps.registration_methods.password') %>
             </p>
           </div>
         </div>
         <!-- Calc 3 -->
         <div class="calc-item">
           <div class="calc-name">
-            Использование камеры
+            <%= t('.steps.camera_use.content') %>
           </div>
           <div class="calc-select">
             <%= f.radio_button :camera_use, true %>
             <i class="icon-camera-calculator-active"></i>
             <p>
-              Камера
+              <%= t('.steps.camera_use.yes') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.radio_button :camera_use, false %>
             <i class="icon-no-02-calculator-active"></i>
             <p>
-              Не требуется
+              <%= t('.steps.camera_use.no') %>
             </p>
           </div>
         </div>
         <!-- Calc 4 -->
         <div class="calc-item">
           <div class="calc-name">
-            Использование геопозиции и карт?<br>
-            Определение местоположения, отображение объектов на карте и т.д.
+            <%= t('.steps.geolocation_use.content') %>
           </div>
           <div class="calc-select">
             <%= f.radio_button :geolocation_use, true %>
             <i class="icon-map-calculator-active"></i>
             <p>
-              Геолокация
+              <%= t('.steps.geolocation_use.yes') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.radio_button :geolocation_use, false %>
             <i class="icon-no-03-calculator-active"></i>
             <p>
-              Не требуется
+              <%= t('.steps.geolocation_use.no') %>
             </p>
           </div>
         </div>
         <!-- Calc 5 -->
         <div class="calc-item">
           <div class="calc-name">
-            Выберите один или несколько способов коммуникации<br>
-            с пользователями приложения
+            <%= t('.steps.notification_methods.content') %>
           </div>
           <div class="calc-select">
             <%= f.check_box :notification_methods, { multiple: true }, 'push', nil %>
             <i class="icon-push-calculator-active"></i>
             <p>
-              Push-уведомления
+              <%= t('.steps.notification_methods.push') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.check_box :notification_methods, { multiple: true }, 'email', nil %>
             <i class="icon-mail-calculator-active"></i>
             <p>
-              Email-рассылки
+              <%= t('.steps.notification_methods.email') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.check_box :notification_methods, { multiple: true }, 'sms', nil %>
             <i class="icon-sms-calculator-active"></i>
             <p>
-              SMS-рассылки
+              <%= t('.steps.notification_methods.sms') %>
             </p>
           </div>
         </div>
         <!-- Calc 6 -->
         <div class="calc-item">
           <div class="calc-name">
-            Есть ли у вас техническое задание?
+            <%= t('.steps.specification_stage.content') %>
           </div>
           <div class="calc-select">
             <%= f.radio_button :specification_stage, 'complete' %>
             <i class="icon-yes-calculator-active"></i>
             <p>
-              Есть подробное техническое задание
+              <%= t('.steps.specification_stage.complete') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.radio_button :specification_stage, 'half-complete' %>
             <i class="icon-incomplete-calculator-active"></i>
             <p>
-              Неполное, нуждается в доработке
+              <%= t('.steps.specification_stage.draft') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.radio_button :specification_stage, 'none' %>
             <i class="icon-idea-calculator-active"></i>
             <p>
-              Нет технического задания, только идея
+              <%= t('.steps.specification_stage.no') %>
             </p>
           </div>
         </div>
         <!-- Calc 7 -->
         <div class="calc-item">
           <div class="calc-name">
-            Есть ли у вас логотип, фирменный стиль?
+            <%= t('.steps.logo.content') %>
           </div>
           <div class="calc-select">
             <%= f.radio_button :logo, true %>
             <i class="icon-yeslogo-calculator-active"></i>
             <p>
-              Да, есть
+              <%= t('.steps.logo.yes') %>
             </p>
           </div>
           <div class="calc-select">
             <%= f.radio_button :logo, false %>
             <i class="icon-pen-calculator-active"></i>
             <p>
-              Требуется разработать
+              <%= t('.steps.logo.no') %>
             </p>
           </div>
         </div>
         <!-- Calc 8 -->
         <div class="calc-item">
           <div class="calc-name">
-            Менеджер уже готовит для вас коммерческое предложение.<br>
-            Контактные данные будут использованы только для связи с вами.
+            <%= t('.steps.form.content') %>
           </div>
           <div class="form">
-            <%= f.text_field :name, placeholder: 'Имя', required: true %>
-            <%= f.text_field :phone_number_or_email, placeholder: 'Email или номер телефона', required: true %>
-            <%= f.text_field :comment, placeholder: 'Комментарий (опционально)' %>
+            <%= f.text_field :name, placeholder: true, required: true %>
+            <%= f.text_field :phone_number_or_email, placeholder: true, required: true %>
+            <%= f.text_field :comment, placeholder: true %>
           </div>
         </div>
       </div>
       <div class="calc-links">
-        <a class="btn calc-prev" href="#">назад</a> <a class="btn calc-next active" href="#">далее</a>
-        <%= button_tag 'отправить', class: 'btn calc-submit' %>
+        <a class="btn calc-prev" href="#">
+          <%= t('.previous_step') %>
+        </a>
+        <a class="btn calc-next active" href="#">
+          <%= t('.next_step') %>
+        </a>
+        <%= f.submit class: 'btn calc-submit' %>
       </div>
     <% end %>
   </div>

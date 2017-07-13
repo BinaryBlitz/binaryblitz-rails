@@ -1,0 +1,38 @@
+en:
+  price_estimations:
+    new:
+      head: Price estimation
+      next_step: "Next"
+      previous_step: "Previous"
+      steps:
+        platforms:
+          content: "Choose application platforms"
+        registration_methods:
+          content: "Signup methods"
+          phone_number: "Phone number"
+          social_networks: "Social networks"
+          password: "Password"
+        camera_use:
+          content: "Camera use"
+          "yes": "Camera"
+          "no": "Not required"
+        geolocation_use:
+          content: "Will your app use location services?"
+          "yes": "Location services"
+          "no": "Not required"
+        notification_methods:
+          content: "How will the app communicate with users?"
+          push: "Push notifications"
+          email: "Email newsletters"
+          sms: "SMS"
+        specification_stage:
+          content: "Do you have a specification?"
+          complete: "Yes, complete"
+          draft: "Draft only, to be finalized"
+          "no": "No, just an idea"
+        logo:
+          content: "Do you have a logo and a brand book?"
+          "yes": "Yes"
+          "no": "No, needs to be created"
+        form:
+          content: "Our manager is making a commercial offer for you. Contact information will only be used to communicate with you."
