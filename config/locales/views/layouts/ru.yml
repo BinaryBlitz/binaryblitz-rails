@@ -2,6 +2,6 @@ ru:
   layouts:
     navbar:
       projects: "Проекты"
-      contact: "Контекты"
+      contact: "Контакты"
       calculator: "Калькулятор"
       callback: "Обратный звонок"
