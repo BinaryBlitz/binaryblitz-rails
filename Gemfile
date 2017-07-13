@@ -24,18 +24,18 @@ gem 'turbolinks', '~> 5'
 # gem 'redis', '~> 3.0'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.3'
 
 # Views
 gem 'bootstrap-sass', '~> 3.3'
 
 # Utilities
-gem 'httparty'
-gem 'phonelib'
-gem 'email_validator'
+gem 'httparty', '~> 0.15'
+gem 'phonelib', '~> 0.6'
+gem 'email_validator', '~> 1.6'
 
 # I18n
-gem 'rails-i18n'
+gem 'rails-i18n', '~> 5.0'
 
 # Monitoring
 gem 'rollbar'
