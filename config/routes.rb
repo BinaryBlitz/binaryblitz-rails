@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /en|ru/ do
     get 'contact', to: 'callback_requests#new'
 
-    get 'projects', to: 'pages#projects'
     get 'calculator', to: 'price_estimations#new'
 
     # Projects
+    get 'projects', to: 'projects#index'
     scope 'projects', controller: :projects do
       get 'academia', 'chisto', 'gethelp', 'justforyou', 'sportup', 'onevsone'
     end

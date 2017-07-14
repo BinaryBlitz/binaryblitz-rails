@@ -5,3 +5,11 @@ ru:
       contact: "Контакты"
       calculator: "Калькулятор"
       callback: "Обратный звонок"
+    footer:
+      address: "Москва, ул. Большая Никитская д. 22"
+    modal:
+      head: "Оставьте номер телефона, и мы перезвоним"
+      placeholder:
+        callback_request:
+          email: "Email (опционально)"
+          content: "Комментарий (опционально)"

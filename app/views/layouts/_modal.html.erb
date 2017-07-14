@@ -3,12 +3,12 @@
   <div class="modal-form" id="modal">
     <%= form_for CallbackRequest.new, html: {class: 'form'} do |f| %>
       <h2 class="head modal-form-head">
-        Оставьте номер телефона и мы перезвоним
+        <%= t('.head') %>
       </h2>
-      <%= f.text_field :name, placeholder: 'Имя', required: true %>
-      <%= f.phone_field :phone_number, placeholder: 'Номер телефона', required: true %>
-      <%= f.text_field :email, placeholder: 'Email (опционально)' %>
-      <%= f.text_field :content, placeholder: 'Комментарий (опционально)' %>
+      <%= f.text_field :name, placeholder: true, required: true %>
+      <%= f.phone_field :phone_number, placeholder: true, required: true %>
+      <%= f.text_field :email, placeholder: t('.placeholder.callback_request.email') %>
+      <%= f.text_field :content, placeholder: t('.placeholder.callback_request.content') %>
       <%= button_tag 'Отправить', class: 'btn' %>
     <% end %>
   </div>

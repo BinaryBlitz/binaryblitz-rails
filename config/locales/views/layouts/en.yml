@@ -5,3 +5,11 @@ en:
       contact: "Contact"
       calculator: "Estimate price"
       callback: "Callback"
+    footer:
+      address: "Bolshaya Nikitskaya 22, Moscow, Russia"
+    modal:
+      head: "Leave your phone number and we will contact you"
+      placeholder:
+        callback_request:
+          email: "Email (optional)"
+          content: "Exra information (optional)"

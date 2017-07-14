@@ -1,5 +1,8 @@
 ru:
   projects:
+    index:
+      apps: "Мобильные приложения"
+      web: "Сайты"
     back: "Проекты"
     about: "О приложении"
     technologies: "Технологии"
