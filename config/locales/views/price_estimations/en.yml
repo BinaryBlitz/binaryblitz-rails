@@ -1,7 +1,8 @@
 en:
   price_estimations:
     new:
-      head: Price estimation
+      title: "Price estimation"
+      head: "Price estimation"
       next_step: "Next"
       previous_step: "Previous"
       steps:

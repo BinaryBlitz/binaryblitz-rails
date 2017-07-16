@@ -1,10 +1,14 @@
+<%= provide(:title, t('.title')) %>
+
 <!-- Contacts -->
 <%= render 'shared/error_messages', object: @callback_request %>
 
 <section class="contacts-wrap">
   <div class="container">
     <div class="contacts">
-      <h1 class="contacts-head">Мы всегда на связи</h1>
+      <h1 class="contacts-head">
+        <%= t('.head') %>
+      </h1>
       <div class="row">
         <div class="col-sm-6">
           <div class="contacts-items">

@@ -1,6 +1,7 @@
 en:
   projects:
     index:
+      title: "Projects"
       apps: "Mobile apps"
       web: "Websites"
     back: "Projects"
@@ -10,6 +11,7 @@ en:
       app: "Mobile app"
       web: "Website"
     academia:
+      title: "Academia"
       head: "Chain of city cafes"
       description: "Academia exists for more than 10 years. 9 restaurants were opened during this time under this brand."
       about: |
@@ -17,11 +19,13 @@ en:
 
         We created a flexible order distribution system between restaurants of the chain. Depending on the delivery address order is sent to the nearest restaurant and switches to the optimal courier. This optimizes delivery costs and reduces order lead time.
     chisto:
+      title: "Chisto"
       head: "Dry-cleaning delivered"
       description: "No need to waste time on trips to the dry cleaning. Save time and money on dry-cleaning and laundry with Chisto."
       about: |
         We created an app, that helps people to get rid of dry-cleaning routine. Add items for cleaning. Choose a cleaning service from our list of offers by price and speed. Pay with credit card in the app or in cash. A courier will collect your things at the agreed time and will then return them clean.
     gethelp:
+      title: "GetHelp"
       head: "Study assistant"
       description: "GetHelp —  students handworks drafting service. Qualified experts for past few years help students to solve problems during their studies."
       about: |
@@ -29,6 +33,7 @@ en:
 
         Users can communicate with their assistants via built-in chat, where they can send photos of their tasks to get faster help. After matching all the details the user can pay his order inside the app.
     justforyou:
+      title: "Just For You"
       head: "Diet food delivery"
       description: "Healthy food delivery project JUST FOR YOU was created in Moscow in 2006 by Doctor Irina Pochitaeva and restaurateur Arcady Novikov."
       about: |
@@ -36,6 +41,7 @@ en:
 
         After payment, the user selects delivery dates with the help of easy calendar. He also can exclude ingredients that he does not eat.
     onevsone:
+      title: "One vs. One"
       head: "Trivia game"
       description: "Beat your friends in a trivia game, learn new things in various categories or play with unknown users in special rooms. Get achievements and become the best."
       about: |
@@ -45,6 +51,7 @@ en:
 
         A wide variety of questions, player rankings and many other features make this app one of our best works.
     sportup:
+      title: "SportUp"
       head: "Search sporting events"
       description: "Either you want to find a party for a football game, or your team has a lack of players for evening match — SportUp will solve this problems. "
       about: |

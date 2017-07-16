@@ -1,4 +1,6 @@
 ru:
   callback_requests:
     new:
+      title: "Контакты"
+      head: "Мы всегда на связи"
       address: "Москва, ул. Большая Никитская д. 22"

@@ -1,4 +1,6 @@
 en:
   callback_requests:
     new:
+      title: "Contact"
+      head: "We are always in touch"
       address: "Bolshaya Nikitskaya 22, Moscow, Russia"

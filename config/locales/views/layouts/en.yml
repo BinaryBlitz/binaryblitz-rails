@@ -3,7 +3,7 @@ en:
     navbar:
       projects: "Projects"
       contact: "Contact"
-      calculator: "Estimate price"
+      calculator: "Price estimation"
       callback: "Callback"
     footer:
       address: "Bolshaya Nikitskaya 22, Moscow, Russia"
@@ -12,4 +12,4 @@ en:
       placeholder:
         callback_request:
           email: "Email (optional)"
-          content: "Exra information (optional)"
+          content: "Extra information (optional)"

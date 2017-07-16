@@ -1,7 +1,8 @@
 ru:
   price_estimations:
     new:
-      head: Калькулятор стоимости приложения
+      title: "Расчёт стоимости"
+      head: "Расчёт стоимости приложения"
       next_step: "Далее"
       previous_step: "Назад"
       steps:
