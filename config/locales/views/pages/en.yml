@@ -10,6 +10,7 @@ en:
         head: "Web"
         description: |
           We build projects of any complexity: from simple landing and promo pages to smart web applications and online stores. Your site will increase your profits, promote the brand, generate calls and boost sales — everything for your business needs.
+        projects: "Our projects"
       about:
         design:
           head: "Brand and product design"
