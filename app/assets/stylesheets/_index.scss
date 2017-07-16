@@ -73,8 +73,7 @@
 }
 
 .form {
-  input,
-  textarea {
+  input:not([type=submit]), textarea {
     font-size: 1.125em;
     font-family: 'Proxima Nova';
     color: $main;

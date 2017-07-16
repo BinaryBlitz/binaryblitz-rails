@@ -9,7 +9,7 @@
       <%= f.phone_field :phone_number, placeholder: true, required: true %>
       <%= f.text_field :email, placeholder: t('.placeholder.callback_request.email') %>
       <%= f.text_field :content, placeholder: t('.placeholder.callback_request.content') %>
-      <%= button_tag 'Отправить', class: 'btn' %>
+      <%= f.submit class: 'btn' %>
     <% end %>
   </div>
 <% end %>

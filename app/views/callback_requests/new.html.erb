@@ -30,7 +30,7 @@
             <%= f.email_field :email, placeholder: true, required: true %>
             <%= f.phone_field :phone_number, placeholder: 'Номер телефона (опционально)' %>
             <%= f.text_area :content, placeholder: 'Ваш вопрос' %>
-            <%= button_tag 'Отправить', class: 'btn' %>
+            <%= f.submit class: 'btn' %>
           <% end %>
         </div>
       </div>
