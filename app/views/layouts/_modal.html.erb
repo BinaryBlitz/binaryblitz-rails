@@ -6,7 +6,7 @@
         <%= t('.head') %>
       </h2>
       <%= f.text_field :name, placeholder: true, required: true %>
-      <%= f.phone_field :phone_number, placeholder: true, required: true %>
+      <%= f.phone_field :phone_number, placeholder: t('.placeholder.callback_request.phone_number'), required: true %>
       <%= f.text_field :email, placeholder: t('.placeholder.callback_request.email') %>
       <%= f.text_field :content, placeholder: t('.placeholder.callback_request.content') %>
       <%= f.submit class: 'btn' %>

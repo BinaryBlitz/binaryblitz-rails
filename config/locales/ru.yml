@@ -12,6 +12,9 @@ ru:
         phone_number_or_email: "Email или номер телефона"
   helpers:
     placeholder:
+      callback_request:
+        phone_number: "Номер телефона (опционально)"
+        content: "Ваш вопрос"
       price_estimation:
         comment: "Комментарий (опционально)"
     submit:

@@ -11,5 +11,6 @@ en:
       head: "Leave your phone number and we will contact you"
       placeholder:
         callback_request:
-          email: "Email (optional)"
           content: "Extra information (optional)"
+          email: "Email (optional)"
+          phone_number: "Phone number"

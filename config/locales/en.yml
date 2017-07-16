@@ -33,16 +33,19 @@ en:
   activerecord:
     attributes:
       callback_request:
-        content: Content
-        email: Email
-        name: Name
-        phone_number: Phone number
+        content: "Content"
+        email: "Email"
+        name: "Name"
+        phone_number: "Phone number"
       price_estimation:
         name: "Name"
         comment: "Extra information"
         phone_number_or_email: "Email or phone number"
   helpers:
     placeholder:
+      callback_request:
+        phone_number: "Phone number (optional)"
+        content: "Your message"
       price_estimation:
         comment: "Extra information (optional)"
     submit:
