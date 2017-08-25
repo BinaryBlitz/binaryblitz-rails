@@ -13,3 +13,4 @@ ru:
         callback_request:
           email: "Email (опционально)"
           content: "Комментарий (опционально)"
+          phone_number: "Номер телефона"

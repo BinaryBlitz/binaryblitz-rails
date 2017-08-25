@@ -4,10 +4,10 @@ class CallbackRequest < ApplicationRecord
   SMS_VERIFICATION_URL = 'http://sms.ru/sms/send'
 
   validates :name, presence: true
-  validates :email, presence: true, unless: 'phone_number.present?'
-  validates :email, email: true, if: 'email.present?'
+  validates :email, presence: true, unless: -> (request) { request.phone_number.present? }
+  validates :email, email: true, if: -> (request) { request.email.present? }
 
-  validates :phone_number, presence: true, unless: 'email.present?'
+  validates :phone_number, presence: true, unless: -> (request) { request.email.present? }
 
   after_create :send_email
   after_create :send_sms_notification
