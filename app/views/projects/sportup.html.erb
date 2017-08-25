@@ -56,48 +56,12 @@
     <div class="container">
       <div class="tech">
         <h2 class="tech-head head">
-          <%= t('projects.technologies') %>
+          <%= t('projects.technologies.head') %>
         </h2>
         <div class="row">
-          <div class="col-sm-4">
-            <div class="tech-item">
-              <div class="tech-img">
-                <img alt="" src="/images/tech1.png">
-              </div>
-              <h3 class="tech-item-head">
-                Ruby on Rails
-              </h3>
-              <p>
-                As anyone who has experience knows, there are advantages and disadvantages to outsourcing software development.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="tech-item">
-              <div class="tech-img">
-                <img alt="" src="/images/tech2.png">
-              </div>
-              <h3 class="tech-item-head">
-                Haml
-              </h3>
-              <p>
-                Usage of the Internet is becoming more common due to rapid advancement of technology and the power.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="tech-item">
-              <div class="tech-img">
-                <img alt="" src="/images/tech3.png">
-              </div>
-              <h3 class="tech-item-head">
-                CodeIgniter
-              </h3>
-              <p>
-                The moment you think of buying a Web Hosting Plan, you know one thing – So many choices, which one to choose.
-              </p>
-            </div>
-          </div>
+          <%= render 'projects/technologies/rails' %>
+          <%= render 'projects/technologies/swift' %>
+          <%= render 'projects/technologies/kotlin' %>
         </div>
       </div>
     </div>

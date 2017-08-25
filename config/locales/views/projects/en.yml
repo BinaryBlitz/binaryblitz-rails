@@ -6,10 +6,17 @@ en:
       web: "Websites"
     back: "Projects"
     about: "About"
-    technologies: "Technologies"
     types:
       app: "Mobile app"
       web: "Website"
+    technologies:
+      head: "Technologies"
+      rails:
+        description: "Statically typed programming language for modern multiplatform applications. 100% interoperable with Java and Android."
+      swift:
+        description: "Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns."
+      kotlin:
+        description: "Statically typed programming language for modern multiplatform applications. 100% interoperable with Java and Android."
     academia:
       title: "Academia"
       head: "Chain of city cafes"
