@@ -6,6 +6,7 @@ en:
       calculator: "Price estimation"
       callback: "Callback"
       jobs: "Jobs"
+      consulting: "Consulting"
     footer:
       address: "Bolshaya Nikitskaya 22, Moscow, Russia"
     modal:

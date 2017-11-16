@@ -16,6 +16,9 @@ Rails.application.routes.draw do
     # Jobs
     get 'jobs', to: 'jobs#index'
 
+    # Consulting
+    get 'consulting', to: 'pages#consulting'
+
     resources :callback_requests, only: [:create]
     resources :price_estimations, only: [:create]
   end

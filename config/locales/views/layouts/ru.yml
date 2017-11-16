@@ -6,6 +6,7 @@ ru:
       calculator: "Калькулятор"
       callback: "Обратный звонок"
       jobs: "Вакансии"
+      consulting: "Консалтинг"
     footer:
       address: "Москва, ул. Большая Никитская д. 22"
     modal:
