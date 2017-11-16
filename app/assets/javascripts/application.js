@@ -87,4 +87,21 @@ $(document).on('turbolinks:load', function() {
     swipe: false,
     infinite: false
   });
+
+  // Jobs
+
+  $('.open-job-head').click(function(){
+    var content = $(this).next();
+    var parent = $(this).parent().parent();
+
+    if (parent.hasClass('active')) {
+      content.slideUp();
+      parent.removeClass('active');
+    } else {
+      $('.open-job-content').slideUp();
+      $('.open-job-item').removeClass('active');
+      content.slideDown();
+      parent.addClass('active');
+    }
+  });
 });

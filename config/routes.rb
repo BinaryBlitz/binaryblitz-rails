@@ -13,6 +13,9 @@ Rails.application.routes.draw do
       get 'academia', 'chisto', 'gethelp', 'justforyou', 'sportup', 'onevsone'
     end
 
+    # Jobs
+    get 'jobs', to: 'jobs#index'
+
     resources :callback_requests, only: [:create]
     resources :price_estimations, only: [:create]
   end

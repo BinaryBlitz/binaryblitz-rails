@@ -1,0 +1,233 @@
+.container-sm {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Job */
+
+.job {
+  padding: 73px 0 31px;
+  h2 {
+    font-weight: 600;
+    color: #1e1f1e;
+    line-height: 1.3;
+    font-size: 2rem;
+    margin: 0 0 50px;
+  }
+  p {
+    color: #1e1f1e;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    padding-right: 40px;
+  }
+  &-content {
+    padding-left: 60px;
+  }
+  ul {
+    padding-top: 37px;
+    li {
+      position: relative;
+      img {
+        position: absolute;
+        top: -5px;
+        left: 0;
+      }
+      &:nth-child(2) img,
+      &:nth-child(3) img {
+        top: 5px;
+      }
+      span {
+        display: block;
+        color: #1e1f1e;
+        font-size: 1.125rem;
+        padding-left: 104px;
+        line-height: 1.4;
+        margin-bottom: 53px;
+      }
+    }
+  }
+}
+
+/* Open-job */
+
+.open-job {
+  &-header {
+    &-head {
+      margin-bottom: 34px;
+    }
+  }
+  &-item {
+    background: #fff;
+    margin-bottom: 10px;
+    &.active {
+      .open-job-head span {
+        transform: rotate(225deg);
+        color: #000;
+      }
+    }
+  }
+  &-content {
+    padding-top: 22px;
+    display: none;
+    &.active {
+      display: block;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+    &-wrap {
+      margin-bottom: 35px;
+      h3 {
+        font-weight: 700;
+        margin-bottom: 33px;
+        font-size: 1.25rem;
+      }
+      ul {
+        li {
+          padding-left: 34px;
+          line-height: 1.25;
+          margin-bottom: 20px;
+          position: relative;
+          &:before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 6px;
+            background-color: #a3adaf;
+            border-radius: 3px;
+            position: absolute;
+            top: 7px;
+            left: 3px;
+          }
+        }
+      }
+    }
+  }
+  &-head {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    padding: 30px 30px 30px 0;
+    cursor: pointer;
+    position: relative;
+    span {
+      font-size: 2.5rem;
+      color: #a3adaf;
+      border-radius: 1px;
+      position: absolute;
+      top: 21px;
+      right: -31px;
+      transition: 300ms;
+    }
+  }
+  &-callback {
+    form {
+      width: 770px;
+      padding-top: 35px;
+      textarea {
+        border: none;
+        width: 100%;
+        height: 80px;
+        resize: none;
+        font-weight: 400;
+        font-family: 'Proxima Nova';
+        line-height: 1.1;
+        font-size: 1.125rem;
+        font-weight: 300;
+        color: #a3adaf;
+        border-bottom: 1px solid #a3adaf;
+        &::-webkit-input-placeholder {
+          color: #a3adaf;
+        }
+        &:-moz-placeholder {
+          color: #a3adaf;
+        }
+        &::-moz-placeholder {
+          color: #a3adaf;
+        }
+        &:-ms-input-placeholder {
+          color: #a3adaf;
+        }
+      }
+    }
+    &-input {
+      display: inline-block;
+      vertical-align: top;
+      width: 370px;
+      margin-right: 24px;
+      margin-bottom: 57px;
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+      input {
+        border: none;
+        width: 100%;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-family: 'Proxima Nova';
+        line-height: 44px;
+        font-weight: 300;
+        color: #a3adaf;
+        border-bottom: 1px solid #a3adaf;
+        &::-webkit-input-placeholder {
+          color: #a3adaf;
+        }
+        &:-moz-placeholder {
+          color: #a3adaf;
+        }
+        &::-moz-placeholder {
+          color: #a3adaf;
+        }
+        &:-ms-input-placeholder {
+          color: #a3adaf;
+        }
+      }
+    }
+    &-bottom {
+      padding-top: 46px;
+      padding-bottom: 60px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        font-size: 1.125rem;
+        margin-left: 36px;
+        position: relative;
+        &:before {
+          content: '';
+          display: block;
+          background: url(../images/icon-file.png) no-repeat 50%;
+          width: 23px;
+          height: 22px;
+          position: absolute;
+          top: 0;
+          left: -36px;
+        }
+      }
+      button {
+        background: none;
+        line-height: 38px;
+        border: 1px solid #1e1f1e;
+        border-radius: 19px;
+        padding: 0 18px;
+        letter-spacing: 1px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: 300ms;
+        &:hover {
+          color: #fff;
+          background: #000;
+        }
+      }
+    }
+  }
+}
