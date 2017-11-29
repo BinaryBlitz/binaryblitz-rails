@@ -14,7 +14,7 @@ en:
       rails:
         description: "Statically typed programming language for modern multiplatform applications. 100% interoperable with Java and Android."
       swift:
-        description: "Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns."
+        description: "General-purpose programming language built using a modern approach to safety, performance, and software design patterns."
       kotlin:
         description: "Statically typed programming language for modern multiplatform applications. 100% interoperable with Java and Android."
     academia:
