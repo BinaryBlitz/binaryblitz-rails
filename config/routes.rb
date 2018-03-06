@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     # Projects
     get 'projects', to: 'projects#index'
     scope 'projects', controller: :projects do
-      get 'academia', 'chisto', 'gethelp', 'justforyou', 'sportup', 'onevsone'
+      get 'academia', 'chisto', 'fitmost', 'gethelp', 'justforyou', 'sportup', 'onevsone'
     end
 
     # Jobs
