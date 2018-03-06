@@ -1,0 +1,43 @@
+<%= provide(:title, t('projects.index.title')) %>
+
+<% cache do %>
+  <!-- Works -->
+  <section class="works-wrap">
+    <div class="container">
+      <div class="works">
+        <div class="works-nav">
+          <ul>
+            <li><%= link_to t('.mobile'), mobile_path %></li>
+            <li><%= link_to t('.web'), web_path, class: 'active' %></li>
+          </ul>
+        </div>
+
+        <div class="row works-items">
+          <div class="col-sm-6 works-item works-item_light">
+            <div class="works-bg" style="background-image: url(/images/projects/gelios/background.png)"></div>
+            <%= link_to '', gelios_path, class: 'works-hover' %>
+            <div class="works-logo">
+              <img alt="" src="/images/projects/gelios/logo-round.png">
+            </div>
+            <span class="works-type"><%= t('projects.types.web') %></span>
+            <p class="works-name">
+              <%= t('projects.gelios.head') %>
+            </p>
+          </div>
+
+          <div class="col-sm-6 works-item works-item_light">
+            <div class="works-bg" style="background-image: url(/images/works-bg3.jpg)"></div>
+            <%= link_to '', chisto_path, class: 'works-hover' %>
+            <div class="works-logo">
+              <img alt="" src="/images/works-logo3.png">
+            </div>
+            <span class="works-type"><%= t('projects.types.app') %></span>
+            <p class="works-name">
+              <%= t('projects.chisto.head') %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>

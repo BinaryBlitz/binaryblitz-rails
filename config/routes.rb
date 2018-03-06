@@ -8,9 +8,12 @@ Rails.application.routes.draw do
     get 'calculator', to: 'price_estimations#new'
 
     # Projects
-    get 'projects', to: 'projects#index'
+    get 'projects', to: 'projects#mobile'
     scope 'projects', controller: :projects do
+      get 'mobile', 'web'
+
       get 'academia', 'chisto', 'fitmost', 'gethelp', 'justforyou', 'sportup', 'onevsone'
+      get 'gelios'
     end
 
     # Jobs

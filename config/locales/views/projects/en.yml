@@ -2,8 +2,8 @@ en:
   projects:
     index:
       title: "Projects"
-      apps: "Mobile apps"
-      web: "Websites"
+      mobile: "Mobile"
+      web: "Web"
     back: "Projects"
     about: "About"
     types:
@@ -31,6 +31,20 @@ en:
       description: "No need to waste time on trips to the dry cleaning. Save time and money on dry-cleaning and laundry with Chisto."
       about: |
         We created an app, that helps people to get rid of dry-cleaning routine. Add items for cleaning. Choose a cleaning service from our list of offers by price and speed. Pay with credit card in the app or in cash. A courier will collect your things at the agreed time and will then return them clean.
+    fitmost:
+      title: "FITMOST"
+      head: "Universal fitness pass"
+      description: "Universal fitness pass"
+      about: |
+        Universal fitness pass
+    gelios:
+      title: "Gelios"
+      head: "Gelios"
+      description: "A well-established system of pharmacies."
+      about: |
+        The company was not represented it the network and needed their own website. Pharmacy website «Gelios» follows all modern trends. Simple, bright, clear design.
+
+        The site structure designed so that the user could get the information quickly and easily.
     gethelp:
       title: "GetHelp"
       head: "Study assistant"
