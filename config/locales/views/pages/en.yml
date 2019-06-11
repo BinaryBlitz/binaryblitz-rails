@@ -1,5 +1,10 @@
 en:
+  jobs:
+    index:
+      title: "Careers"
   pages:
+    consulting:
+      title: "Consulting"
     index:
       title: "Design and development studio: mobile apps, websites"
       mobile_apps:

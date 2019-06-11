@@ -1,5 +1,10 @@
 ru:
+  jobs:
+    index:
+      title: "Вакансии"
   pages:
+    consulting:
+      title: "Консалтинг"
     index:
       title: "Студия дизайна и разработки мобильных приложений и сайтов"
       mobile_apps:
