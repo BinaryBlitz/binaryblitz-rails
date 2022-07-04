@@ -1,6 +1,6 @@
 # README
 
-- Ruby version: 2.6
+- Ruby version: see `.ruby-version`
 - System dependencies: `brew install postgresql`
 - Configuration: `secrets.yml`
 - Database initialization: `$ rails db:setup`
