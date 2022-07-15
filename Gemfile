@@ -8,18 +8,18 @@ end
 ruby '~> 3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 6.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.0'
 # Use Puma as the app server
-gem 'puma', '~> 4.3'
+gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 4.3'
@@ -33,7 +33,7 @@ gem 'phonelib', '~> 0.6'
 gem 'email_validator', '~> 1.6'
 
 # I18n
-gem 'rails-i18n', '~> 5.0'
+gem 'rails-i18n', '~> 6.0'
 
 # Monitoring
 gem 'rollbar'
