@@ -28,7 +28,7 @@ gem 'jquery-rails', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3'
 
 # Utilities
-gem 'httparty', '~> 0.15'
+gem 'httparty', '~> 0.21'
 gem 'phonelib', '~> 0.6'
 gem 'email_validator', '~> 1.6'
 
